@@ -108,6 +108,71 @@
       <div class="outer">
         <section id="main" class="body-wrap">
   
+    <article id="post-spring编程模型" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/22/spring%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/"  >spring 编程模型</a>
+    </h1>
+  
+
+          
+              <span class="header-cate">
+                <i class="fa fa-map-marker"></i>
+                  
+                  <a href="/categories/Spring/">Spring</a>
+                  
+              </span>
+          
+      </header>
+    
+    <div class="article-entry " itemprop="articleBody">
+      
+        <div class="article-img">
+            <a href="/2019/06/22/spring%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/" >
+                
+                <img src="http://www.javacurd.com//images/banner.jpg" alt="spring 编程模型" title="spring 编程模型">
+                
+            </a>
+        </div>
+        <div class="article-feed">
+            <p>
+                面向对象编程契约接口Aware
+从spring容器的IOC中我们知道，所有的bean对于spring容器是无意识的，即你完全可以把spring容器替换成其他的容器而不需要改变...
+            </p>
+        </div>
+      
+        
+    </div>
+    <footer class="article-footer">
+        
+        <ul class="article-footer-menu">
+            
+                <li><i class="fa fa-calendar"></i>2019-06-22</li>
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/java/" class="color5">java</a>
+      
+    <a href="/tags/spring/" class="color2">spring</a>
+      
+  </li>
+
+        </ul>
+        
+            <a href="/2019/06/22/spring%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/#more" class="article-more-link" >more&gt;&gt;</a>
+        
+    </footer>
+  </div>
+</article>
+
+
+  
     <article id="post-spring核心模块" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -131,426 +196,35 @@
     
     <div class="article-entry " itemprop="articleBody">
       
-            
-            <h3 id="Java各个版本语法变化"><a href="#Java各个版本语法变化" class="headerlink" title="Java各个版本语法变化"></a>Java各个版本语法变化</h3><table>
-<thead>
-<tr>
-<th align="center">版本</th>
-<th align="center">年份</th>
-<th align="center">更新内容</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Java 5</td>
-<td align="center">2004</td>
-<td align="center">枚举、泛型、注解、封箱(解箱)等操作</td>
-</tr>
-<tr>
-<td align="center">Java 6</td>
-<td align="center">2006</td>
-<td align="center">@Override 接口</td>
-</tr>
-<tr>
-<td align="center">Java 7</td>
-<td align="center">2011</td>
-<td align="center">Diamond语法，多 try catch 操作</td>
-</tr>
-<tr>
-<td align="center">Java 8</td>
-<td align="center">2014</td>
-<td align="center">Lambda语法、可重复注解、类型注解</td>
-</tr>
-<tr>
-<td align="center">Java 9</td>
-<td align="center">2017</td>
-<td align="center">模块化、接口私有方法等</td>
-</tr>
-<tr>
-<td align="center">Java 10</td>
-<td align="center">2018</td>
-<td align="center">局部变量类型推断</td>
-</tr>
-</tbody></table>
-<h3 id="spring-对Java语言特性运用"><a href="#spring-对Java语言特性运用" class="headerlink" title="spring 对Java语言特性运用"></a>spring 对Java语言特性运用</h3><ul>
-<li>java 5</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>语法特性</th>
-<th align="center">spring支持版本</th>
-<th align="center">代表实现</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>注解(Annotation)</td>
-<td align="center">1.2+</td>
-<td align="center">@Transactional</td>
-</tr>
-<tr>
-<td>枚举(Enumeration)</td>
-<td align="center">1.2+</td>
-<td align="center">Propagation</td>
-</tr>
-<tr>
-<td>for-each语法</td>
-<td align="center">3.0+</td>
-<td align="center">AbstractApplicationContext</td>
-</tr>
-<tr>
-<td>自动装箱(AutoBoxing)</td>
-<td align="center">3.0+</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td>泛型(Generic)</td>
-<td align="center">3.0+</td>
-<td align="center">ApplicationListener</td>
-</tr>
-</tbody></table>
-<ul>
-<li>java 6 </li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">语法特性</th>
-<th align="center">spring支持版本</th>
-<th align="center">代表实现</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">接口@Override</td>
-<td align="center">4.0+</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">* java 7</td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th align="center">语法特性</th>
-<th align="center">spring支持版本</th>
-<th align="center">代表实现</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Diamond语法</td>
-<td align="center">5.0+</td>
-<td align="center">DefaultListableBeanFactory</td>
-</tr>
-<tr>
-<td align="center">try-with-resources语法</td>
-<td align="center">5.0+</td>
-<td align="center">ResourceBundleMessageSource</td>
-</tr>
-</tbody></table>
-<ul>
-<li>java 8</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">语法特性</th>
-<th align="center">spring支持版本</th>
-<th align="center">代表实现</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Lambda语法</td>
-<td align="center">5.0+</td>
-<td align="center">PropertyEditorRegistrySupport</td>
-</tr>
-</tbody></table>
-<h3 id="spring-对jdk-api实践"><a href="#spring-对jdk-api实践" class="headerlink" title="spring 对jdk api实践"></a>spring 对jdk api实践</h3><ul>
-<li>&lt; java 5 api </li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">api类型</th>
-<th align="center">spring支持版本</th>
-<th align="center">代表实现</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">反射</td>
-<td align="center">1.0+</td>
-<td align="center">MethodMatcher</td>
-</tr>
-<tr>
-<td align="center">Java Beans</td>
-<td align="center">1.0+</td>
-<td align="center">CacheIntrospectionResults</td>
-</tr>
-<tr>
-<td align="center">动态代理(Dynamic Proxy)</td>
-<td align="center">1.0+</td>
-<td align="center">JdkDynamicAopProxy</td>
-</tr>
-</tbody></table>
-<ul>
-<li>java 5 api</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">Api类型</th>
-<th align="center">spring支持版本</th>
-<th align="center">代表实现</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">XML处理</td>
-<td align="center">1.0+</td>
-<td align="center">XmlBeanDefinitionReader</td>
-</tr>
-<tr>
-<td align="center">Java管理扩展(JMX)</td>
-<td align="center">1.2+</td>
-<td align="center">@ManagedResource</td>
-</tr>
-<tr>
-<td align="center">Instrumentation</td>
-<td align="center">2.0+</td>
-<td align="center">InstrumentationSavingAgent</td>
-</tr>
-<tr>
-<td align="center">并发框架(J.U.C)</td>
-<td align="center">3.0+</td>
-<td align="center">ThreadPoolTaskScheDuler</td>
-</tr>
-<tr>
-<td align="center">格式化(Formatter)</td>
-<td align="center">3.0+</td>
-<td align="center">DateFormatter</td>
-</tr>
-</tbody></table>
-<ul>
-<li>java 6 api</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">Api类型</th>
-<th align="center">spring支持版本</th>
-<th align="center">代表实现</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">JDBC 4.0（JSR 221）</td>
-<td align="center">1.0+</td>
-<td align="center">JdbcTemplate</td>
-</tr>
-<tr>
-<td align="center">Common Annotations(JSR 250)</td>
-<td align="center">2.5+</td>
-<td align="center">CommonAnnotationBeanPostProcessor</td>
-</tr>
-<tr>
-<td align="center">JAXB 2.0(JSR 222)</td>
-<td align="center">3.0+</td>
-<td align="center">Jaxb2Marshaller</td>
-</tr>
-<tr>
-<td align="center">Scripting in JVM(JSR 223)</td>
-<td align="center">4.2+</td>
-<td align="center">StandardScriptFactory</td>
-</tr>
-<tr>
-<td align="center">可插拔注解处理api(JSR 269)</td>
-<td align="center">5.0+</td>
-<td align="center">@Indexed</td>
-</tr>
-<tr>
-<td align="center">Java Compiler API(JSR 199)</td>
-<td align="center">5.0+</td>
-<td align="center">TestCompiler</td>
-</tr>
-</tbody></table>
-<ul>
-<li>java 7 api </li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">API 类型</th>
-<th align="center">spring支持版本</th>
-<th align="center">代表实现</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Fork/Join 框架(JSR 166)</td>
-<td align="center">3.1+</td>
-<td align="center">ForkJoinPoolFactoryBean</td>
-</tr>
-<tr>
-<td align="center">NIO 2(JSR 203)</td>
-<td align="center">4.0+</td>
-<td align="center">PathResource</td>
-</tr>
-</tbody></table>
-<ul>
-<li>java 8 </li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">API类型</th>
-<th align="center">spring支持版本</th>
-<th align="center">代表实现</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Date and Time API（JSR 310）</td>
-<td align="center">4.0+</td>
-<td align="center">DateTimeContext</td>
-</tr>
-<tr>
-<td align="center">可重复 Annotations(JSR 337)</td>
-<td align="center">4.0+</td>
-<td align="center">@PropertySources</td>
-</tr>
-<tr>
-<td align="center">Stream API(JSR 335)</td>
-<td align="center">4.2+</td>
-<td align="center">StreamConverter</td>
-</tr>
-<tr>
-<td align="center">CompletableFuture(J.U.C)</td>
-<td align="center">4.2+</td>
-<td align="center">CompletableToListenableFutureAdApter</td>
-</tr>
-</tbody></table>
-<h3 id="spring-对Java-EE-API-整合"><a href="#spring-对Java-EE-API-整合" class="headerlink" title="spring 对Java EE API 整合"></a>spring 对Java EE API 整合</h3><ul>
-<li>Java EE Web 技术相关</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">JSR 规范</th>
-<th align="center">Spring支持版本</th>
-<th align="center">代表实现</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Servlet + JSP(JSR 035)</td>
-<td align="center">1.0+</td>
-<td align="center">DispatcherServlet</td>
-</tr>
-<tr>
-<td align="center">JSTL(JSR 052)</td>
-<td align="center">1.0+</td>
-<td align="center">JstView</td>
-</tr>
-<tr>
-<td align="center">JavaServer Faces(JSR 127)</td>
-<td align="center">1.1+</td>
-<td align="center">facesContextUtils</td>
-</tr>
-<tr>
-<td align="center">Portlet(JSR 168)</td>
-<td align="center">2.0-4.2</td>
-<td align="center">DispatcherPortlet</td>
-</tr>
-<tr>
-<td align="center">SOAP(JSR 067)</td>
-<td align="center">2.5+</td>
-<td align="center">SoapFaultException</td>
-</tr>
-<tr>
-<td align="center">WebServices(JSR 109)</td>
-<td align="center">2.5+</td>
-<td align="center">CommonAnnotationBeanPostProcessor</td>
-</tr>
-<tr>
-<td align="center">WebSocket(JSR 356)</td>
-<td align="center">4.0+</td>
-<td align="center">WebSocketHandler</td>
-</tr>
-</tbody></table>
-<ul>
-<li>Java EE 数据存储相关</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">JSR 规范</th>
-<th align="center">Spring支持版本</th>
-<th align="center">代表实现</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">JDO(JSR 12)</td>
-<td align="center">1.0-4.2</td>
-<td align="center">JdoTemplate</td>
-</tr>
-<tr>
-<td align="center">JTA(JSR 907)</td>
-<td align="center">1.0+</td>
-<td align="center">JtaTransationManager</td>
-</tr>
-<tr>
-<td align="center">JPA(EJB 3.0 JAR 220的成员)</td>
-<td align="center">2.0+</td>
-<td align="center">JpaTransactionManager</td>
-</tr>
-<tr>
-<td align="center">Java Caching API(JSR 107)</td>
-<td align="center">3.2+</td>
-<td align="center">JCacheCache</td>
-</tr>
-</tbody></table>
-<ul>
-<li>Java EE Bean 技术相关</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">JSR 规范</th>
-<th align="center">Spring支持版本</th>
-<th align="center">代表实现</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">JMS(JSR 914)</td>
-<td align="center">1.1+</td>
-<td align="center">JmsTemplate</td>
-</tr>
-<tr>
-<td align="center">EJB 2.0(JSR 19)</td>
-<td align="center">1.0+</td>
-<td align="center">AbstractStatefulSessionBean</td>
-</tr>
-<tr>
-<td align="center">Dependency Injection for Java(JSR 330)</td>
-<td align="center">2.5+</td>
-<td align="center">AutowiredAnnotationBeanPostProcessor</td>
-</tr>
-<tr>
-<td align="center">Bean Validation(JSR 303)</td>
-<td align="center">3.0+</td>
-<td align="center">LocalValidatorFactoryBean</td>
-</tr>
-</tbody></table>
-
-            <div class="post-copyright">
-    <div class="content">
-        <p>最后更新： 2020年06月22日 14:33</p>
-        <p>原始链接： <a class="post-url" href="/2019/06/21/spring%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97/" title="spring Framework总览">http://www.javacurd.com/2019/06/21/spring%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97/</a></p>
-        <footer>
-            <a href="http://www.javacurd.com">
-                <img src="/images/logo.png" alt="zhanzengjin">
-                zhanzengjin
+        <div class="article-img">
+            <a href="/2019/06/21/spring%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97/" >
+                
+                <img src="http://www.javacurd.com//images/banner.jpg" alt="spring Framework总览" title="spring Framework总览">
+                
             </a>
-        </footer>
-    </div>
-</div>
+        </div>
+        <div class="article-feed">
+            <p>
+                Java各个版本语法变化
 
+
+版本
+年份
+更新内容
+
+
+
+Java 5
+2004
+枚举、泛型、注解、封箱(解箱)等操作
+
+
+Java 6
+2006
+@Override 接口
+...
+            </p>
+        </div>
       
         
     </div>
