@@ -16,7 +16,7 @@
 <meta property="og:description" content="面向对象编程契约接口Aware 从spring容器的IOC中我们知道，所有的bean对于spring容器是无意识的，即你完全可以把spring容器替换成其他的容器而不需要改变你的代码，并且bean之间也是没有耦合的，如果我们需要对spring有意识，也就是我们的业务可能需要用到spring底层的一些功能，那么就需要spring提供的一系列XXXAware接口。 使用了spring aware 你的">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-06-21T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-06-22T09:15:50.790Z">
+<meta property="article:modified_time" content="2020-06-22T14:06:22.430Z">
 <meta property="article:author" content="zhanzengjin">
 <meta property="article:tag" content="java">
 <meta property="article:tag" content="spring">
@@ -217,21 +217,17 @@
 <h5 id="BeanPostProcessor"><a href="#BeanPostProcessor" class="headerlink" title="BeanPostProcessor"></a>BeanPostProcessor</h5><ol>
 <li>字面上意思是bean的后置处理器，即 在bean的生命周期中，可以在bean初始化前干点什么，之后再干点什么</li>
 <li>通过实现这个接口，可以被spring管理的bean的生命周期进行插手，这也体现了AOP的设计思想，比如在init()方法执行前后做出不同的动作，其实就是对bean的一种增强，BeanPostProcessor可以存在多个，它们会被存储在一个列表中，然后依次被执行</li>
-<li>接口</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">public interface BeanPostProcessor &#123;</span><br><span class="line">	@Nullable</span><br><span class="line">	default Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException &#123;</span><br><span class="line">	    &#x2F;&#x2F; bean初始化之前，要干点什么或者什么都不干，但是干不干都要把人家给返回回去，不能一进来就出不去了~</span><br><span class="line">		return bean;</span><br><span class="line">	&#125;</span><br><span class="line">	@Nullable</span><br><span class="line">	default Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException &#123;</span><br><span class="line">	    &#x2F;&#x2F; bean已经初始化完了，这时候你想干点什么或者什么都不干，和上面一样，都要给人家返回回去</span><br><span class="line">		return bean;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <h4 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h4><ol>
 <li>观察者模式、组合模式、模板模式</li>
 </ol>
 <h4 id="对象继承"><a href="#对象继承" class="headerlink" title="对象继承"></a>对象继承</h4><ol>
 <li>Abstract 类</li>
 </ol>
-<h3 id="面向切面编程"><a href="#面向切面编程" class="headerlink" title="面向切面编程"></a>面向切面编程</h3><h4 id="动态代理"><a href="#动态代理" class="headerlink" title="动态代理"></a>动态代理</h4><h4 id="字节码提升"><a href="#字节码提升" class="headerlink" title="字节码提升"></a>字节码提升</h4><h3 id="函数驱动"><a href="#函数驱动" class="headerlink" title="函数驱动"></a>函数驱动</h3><h4 id="函数接口"><a href="#函数接口" class="headerlink" title="函数接口"></a>函数接口</h4><p>###模块驱动</p>
-<h4 id="maven-artifacts"><a href="#maven-artifacts" class="headerlink" title="maven artifacts"></a>maven artifacts</h4><h4 id="OSGI-bundles"><a href="#OSGI-bundles" class="headerlink" title="OSGI bundles"></a>OSGI bundles</h4><h4 id="java-9-automatic-modules"><a href="#java-9-automatic-modules" class="headerlink" title="java 9 automatic modules"></a>java 9 automatic modules</h4><h4 id="spring-Enable"><a href="#spring-Enable" class="headerlink" title="spring @Enable*"></a>spring @Enable*</h4><h3 id="面向元编程"><a href="#面向元编程" class="headerlink" title="面向元编程"></a>面向元编程</h3><h4 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h4><h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><h4 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h4>
+<h3 id="面向切面编程"><a href="#面向切面编程" class="headerlink" title="面向切面编程"></a>面向切面编程</h3><h4 id="动态代理"><a href="#动态代理" class="headerlink" title="动态代理"></a>动态代理</h4><h4 id="字节码提升"><a href="#字节码提升" class="headerlink" title="字节码提升"></a>字节码提升</h4><h3 id="函数驱动"><a href="#函数驱动" class="headerlink" title="函数驱动"></a>函数驱动</h3><h4 id="函数接口"><a href="#函数接口" class="headerlink" title="函数接口"></a>函数接口</h4><h3 id="模块驱动"><a href="#模块驱动" class="headerlink" title="模块驱动"></a>模块驱动</h3><h4 id="maven-artifacts"><a href="#maven-artifacts" class="headerlink" title="maven artifacts"></a>maven artifacts</h4><h4 id="osgi-bundles"><a href="#osgi-bundles" class="headerlink" title="osgi bundles"></a>osgi bundles</h4><h4 id="java-9-automatic-modules"><a href="#java-9-automatic-modules" class="headerlink" title="java 9 automatic modules"></a>java 9 automatic modules</h4><h4 id="spring-Enable"><a href="#spring-Enable" class="headerlink" title="spring @Enable*"></a>spring @Enable*</h4><h3 id="面向元编程"><a href="#面向元编程" class="headerlink" title="面向元编程"></a>面向元编程</h3><h4 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h4><h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><h4 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h4>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2020年06月22日 17:15</p>
+        <p>最后更新： 2020年06月22日 22:06</p>
         <p>原始链接： <a class="post-url" href="/2019/06/22/spring%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/" title="spring 编程模型">http://www.javacurd.com/2019/06/22/spring%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B/</a></p>
         <footer>
             <a href="http://www.javacurd.com">
@@ -320,16 +316,26 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#面向对象编程"><span class="post-toc-text">面向对象编程</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#契约接口"><span class="post-toc-text">契约接口</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Aware"><span class="post-toc-text">Aware</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#BeanPostProcessor"><span class="post-toc-text">BeanPostProcessor</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#设计模式"><span class="post-toc-text">设计模式</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#对象继承"><span class="post-toc-text">对象继承</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#面向切面编程"><span class="post-toc-text">面向切面编程</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#动态代理"><span class="post-toc-text">动态代理</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#字节码提升"><span class="post-toc-text">字节码提升</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#函数驱动"><span class="post-toc-text">函数驱动</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#函数接口"><span class="post-toc-text">函数接口</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#maven-artifacts"><span class="post-toc-text">maven artifacts</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#OSGI-bundles"><span class="post-toc-text">OSGI bundles</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#java-9-automatic-modules"><span class="post-toc-text">java 9 automatic modules</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#spring-Enable"><span class="post-toc-text">spring @Enable*</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#面向元编程"><span class="post-toc-text">面向元编程</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#注解"><span class="post-toc-text">注解</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#配置"><span class="post-toc-text">配置</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#泛型"><span class="post-toc-text">泛型</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#面向对象编程"><span class="post-toc-text">面向对象编程</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#契约接口"><span class="post-toc-text">契约接口</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Aware"><span class="post-toc-text">Aware</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#BeanPostProcessor"><span class="post-toc-text">BeanPostProcessor</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#设计模式"><span class="post-toc-text">设计模式</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#对象继承"><span class="post-toc-text">对象继承</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#面向切面编程"><span class="post-toc-text">面向切面编程</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#动态代理"><span class="post-toc-text">动态代理</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#字节码提升"><span class="post-toc-text">字节码提升</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#函数驱动"><span class="post-toc-text">函数驱动</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#函数接口"><span class="post-toc-text">函数接口</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#模块驱动"><span class="post-toc-text">模块驱动</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#maven-artifacts"><span class="post-toc-text">maven artifacts</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#osgi-bundles"><span class="post-toc-text">osgi bundles</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#java-9-automatic-modules"><span class="post-toc-text">java 9 automatic modules</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#spring-Enable"><span class="post-toc-text">spring @Enable*</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#面向元编程"><span class="post-toc-text">面向元编程</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#注解"><span class="post-toc-text">注解</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#配置"><span class="post-toc-text">配置</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#泛型"><span class="post-toc-text">泛型</span></a></li></ol></li></ol>
         </nav>
     </aside>
     
 
 <nav id="article-nav">
   
+    <a href="/2019/06/25/spring%20Bean/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          spring Bean 基础
+        
+      </span>
+    </a>
   
-    <a href="/2019/06/21/spring%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97/" id="article-nav-older" class="article-nav-link-wrap">
-      <span class="article-nav-title">spring Framework总览</span>
+  
+    <a href="/2019/06/22/spring%20ioc/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">spring ioc</span>
       <i class="fa fa-hand-o-right" aria-hidden="true"></i>
     </a>
   
