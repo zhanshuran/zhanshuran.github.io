@@ -1,0 +1,347 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>个人博客 - 个人分享</title><meta name="description" content="专注Java curd"><meta name="keywords" content="java"><meta name="author" content="詹增锦"><meta name="copyright" content="詹增锦"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://www.javacurd.com/page/3/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="个人博客"><meta property="og:url" content="http://www.javacurd.com/page/3/"><meta property="og:site_name" content="个人博客"><meta property="og:description" content="专注Java curd"><meta property="og:image" content="http://www.javacurd.com/img/avatar.png"><meta property="article:published_time" content="2020-10-22T03:31:17.549Z"><meta property="article:modified_time" content="2020-10-22T03:31:17.549Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isSidebar: false
+  }</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 4.2.1"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">29</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">6</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fas fa-list"></i><span> Li清单</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">个人博客</a></span><span class="pull-right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fas fa-list"></i><span> Li清单</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site_title">个人博客</h1><div id="site_subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/zhanshuran" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:zhanzengjin@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll_down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/posts/ef3993fc.html" title="Synchronized 与锁的关系">     <img class="post_bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Synchronized 与锁的关系"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/ef3993fc.html" title="Synchronized 与锁的关系">Synchronized 与锁的关系</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2019-02-01 00:00:00"><i class="far fa-calendar-alt"></i>2019-02-01</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/java/">java</a></span></div><div class="content">Synchronized 关键字
+说到锁，都是提到 synchronized，这个单词的意思是 同步一般都是使用synchronized 这个关键字来给一段代码或者一个方法上锁，使得这段代码或者方法，在同一时刻只能有一个线程来执行它synchronized 相比于 volatile 来说，用的比较灵活，你可以在方法上使用，可以在静态方法上使用，也可以在代码块上使用
+
+JVM 是如何实现 synchronized 的我们知道可以利用 synchronized 关键字来给程序进行加锁，但是它具体怎么实现的呢，从下面的demo开始了解：
+1234567891011public class synchronizedDemo &#123;    /**     * 测试     * @param lock     */    public void synchronizedDemoMethod(Object lock) &#123;        synchronized (lock) &#123;            lock.hashCode();        &#125;    &#1 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/posts/91e798bc.html" title="Java内存模型之Happens-Before">     <img class="post_bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Java内存模型之Happens-Before"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/91e798bc.html" title="Java内存模型之Happens-Before">Java内存模型之Happens-Before</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2019-02-01 00:00:00"><i class="far fa-calendar-alt"></i>2019-02-01</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/Java/">Java</a></span></div><div class="content">什么是 Java 内存模型在并发编程中，导致可见性的原因是缓存，导致有序性的原因是编译优化，那解决可见性、有序性最直接的办法就是禁用缓存和编译优化，但是这样问题虽然解决了，我们程序的性能可就堪忧了。合理的方案应该是 按需禁用缓存以及编译优化。那么如何做到 “按需禁用”呢？对于并发程序，何时禁用缓存以及编译优化只有程序知道，那所谓“按需禁用”其实是指按照程序员的要求来禁用。所以，为了解决可见性和有序性的问题，只需要提供程序员按需禁用缓存和编译优化的方法即可。
+
+Java 内存模型是个很复杂的规范，可以从不同的视角解读，站在我们程序员的视角，本质上可以理解为，Java 内存模型规范了 JVM 如何提供按需禁用缓存和编译优化的方法。具体来说，这些方法包括了 volatile、synchronized、final 三个关键字，以及六项 Happens-Before 规则，这也是本文的重点
+
+使用 volatile 的困惑
+volatile 关键字并不是 Java 语言的特产，古老的C语言里也有，它最原始的意义就是禁用 CPU 缓存。例如，我们声明一个 volatile 变量 volatile  ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/posts/716f44e2.html" title="hashcode 与 equals">     <img class="post_bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hashcode 与 equals"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/716f44e2.html" title="hashcode 与 equals">hashcode 与 equals</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2019-01-01 00:00:00"><i class="far fa-calendar-alt"></i>2019-01-01</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/java/">java</a></span></div><div class="content">hashcode 与 equals 简介
+equals()  equals() 用于比较两个对象是否相等，它与 == 比较符有着本质上的区别  在万物皆对象的Java体系中，系统把判断两个对象是否相等的权利交给了程序员，具体的措施是把equals()方法写到Object类中，并让所有的类都继承Object类，这样程序员就可以在自己的自定义类中重写equals()方法，从而实现自己的比较逻辑
+hashcode()
+hashcode 的意思是哈希值，哈希值是经过哈希运算得到的结果，哈希函数能够保证相同的输入会得到相同的输出(哈希值)，但是不能够保证不同的输入总是会得到不同的输出(哈希冲突)
+当输入的样本数量足够大时，是会产生哈希冲突的，也就是说不同的输入得到了相同的输出
+抛开不同的输入产生相同的输出，就相同的输入能够产生相同的输出这点而言是很有价值的，它使得系统只需要简单的运算，在时间复杂度为O(1)的情况下就能得到数据的映射关系，根据这种特性，散列表应运而生。
+一种主流的散列表实现是：用数组作为哈希函数的输出域，输入值经过哈希计算得到哈希值，然后根据哈希值，在数组中找到对应的存储单元，当 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/posts/319bf02d.html" title="cookie 和 session">     <img class="post_bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="cookie 和 session"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/319bf02d.html" title="cookie 和 session">cookie 和 session</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2019-01-01 00:00:00"><i class="far fa-calendar-alt"></i>2019-01-01</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/java/">java</a></span></div><div class="content">什么是cookie 和 session
+什么是cookie HTTP Cookie(也叫 Web Cookie 或者浏览器 cookie) 是服务器发送到用户浏览器并保存在本地的一小块数据，它在浏览器下次向同一服务器再发起请求时被携带并发送到服务器上。通常，它用于告知服务端两个请求是否来自同一浏览器，如保持用户的登录状态，Cookie使基于无状态的HTTP协议记录稳定的状态信息成为了可能 Cookie主要用于以下三个方面：
+
+会话状态管理(如登录状态、购物车、游戏分数或其他需要记录的信息)
+个性化设置(如用户自定义设置、主题等)
+浏览器行为跟踪(如跟踪分析用户行为等)
+
+
+什么是session Session代表着服务器和客户端一次会话的过程。Session对象存储特定用户会话所需的属性及配置信息。这样，当用户在应用程序的Web页之间跳转时，存储在Session对象中的变量将不会丢失，而是在整个用户会话中一直存下去，当客户端关闭会话时，或者Session超时失效时会话结束
+
+
+Cookie 和 Session 有什么不同？
+作用范围不同，Cookie保存在客户端(浏览器)，Sessio ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/posts/ed9957e1.html" title="spring bean">     <img class="post_bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="spring bean"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/ed9957e1.html" title="spring bean">spring bean</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2018-01-01 00:00:00"><i class="far fa-calendar-alt"></i>2018-01-01</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/java/">java</a></span></div><div class="content">定义 spring beanBeanDefinition 是 spring framework 中定义 bean 的配置元信息接口，包含了：
+
+Bean 的类名
+Bean 行为配置元素，比如作用域、自动绑定的模式、生命周期回调等
+其他 Bean 引用，又可称作合作者(collaborators) 或者依赖 (dependencies)
+配置设置，如Bean属性(properties)
+
+BeanDefinition 元信息元信息
+
+
+属性
+说明
+
+
+
+Class
+Bean全类名，必须是具体类，不能是抽象类或接口
+
+
+Name
+Bean的名称或ID
+
+
+Scope
+Bean的作用域(如：signleton、prototype)
+
+
+Constructor arguments
+Bean 构造器参数(用于依赖注入)
+
+
+Properties
+Bean 属性设置(用于依赖注入)
+
+
+Autowiring mode
+Bean 自动绑定模式(如：通过名称 byName)
+
+
+Lazy initialization mode
+Bean 延迟初始化模式(延迟和非延迟)
+
+
+initialization ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/posts/360ad78f.html" title="spring ioc">     <img class="post_bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="spring ioc"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/360ad78f.html" title="spring ioc">spring ioc</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2018-01-01 00:00:00"><i class="far fa-calendar-alt"></i>2018-01-01</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/java/">java</a></span></div><div class="content">spring IOC 依赖查找根据名称查找
+实时查找  beanFactory.getBean(name);
+延迟查找  beanFactory.getBean(ObjectFactory);  getBeanProvider(ResolvableType)
+
+根据bean类型查找
+单个bean对象
+集合bean对象
+
+根据bean名称和类型查找根据Java注解查找
+单个bean对象
+集合bean对象
+
+spring IOC 依赖注入spring IOC 依赖来源spring IOC 配置元信息spring IOC 容器spring 应用上下文使用spring IOC 容器spring IOC 容器生命周期</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/posts/142401c1.html" title="spring 核心模块">     <img class="post_bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="spring 核心模块"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/142401c1.html" title="spring 核心模块">spring 核心模块</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2018-01-01 00:00:00"><i class="far fa-calendar-alt"></i>2018-01-01</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/java/">java</a></span></div><div class="content">Java各个版本语法变化
+
+
+版本
+年份
+更新内容
+
+
+
+Java 5
+2004
+枚举、泛型、注解、封箱(解箱)等操作
+
+
+Java 6
+2006
+@Override 接口
+
+
+Java 7
+2011
+Diamond语法，多 try catch 操作
+
+
+Java 8
+2014
+Lambda语法、可重复注解、类型注解
+
+
+Java 9
+2017
+模块化、接口私有方法等
+
+
+Java 10
+2018
+局部变量类型推断
+
+
+spring 对Java语言特性运用
+java 5
+
+
+
+
+语法特性
+spring支持版本
+代表实现
+
+
+
+注解(Annotation)
+1.2+
+@Transactional
+
+
+枚举(Enumeration)
+1.2+
+Propagation
+
+
+for-each语法
+3.0+
+AbstractApplicationContext
+
+
+自动装箱(AutoBoxing)
+3.0+
+
+
+
+泛型(Generic)
+3.0+
+ApplicationListener
+
+
+
+java 6 
+
+
+
+
+语法特性
+spring支持版本
+代表实现
+
+
+
+接口@Override
+4.0+ ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/posts/ef620f2.html" title="线程池ThreadPoolExecutor基础知识">     <img class="post_bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="线程池ThreadPoolExecutor基础知识"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/ef620f2.html" title="线程池ThreadPoolExecutor基础知识">线程池ThreadPoolExecutor基础知识</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2018-01-01 00:00:00"><i class="far fa-calendar-alt"></i>2018-01-01</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/java/">java</a></span></div><div class="content">核心及最大线程数量
+
+
+参数
+描述
+
+
+
+corePoolSize
+核心线程数
+
+
+maximumPoolSize
+最大线程池数量
+
+
+描述图
+描述
+如果池中的实际线程数小于corePoolSize，无论是否其中有空闲的线程，都会给新的任务创建新的线程
+如果线程池中的线程数大于 corePoolSize，则会将新提交的任务提交到阻塞队列排队
+如果线程容量达到上限，并且当前的poolSize 大小maximumPoolSize，则会创建新的线程执行任务
+如果队列已满，且线程数也达到了上限，那么意味着线程池的处理能力达到了极限，需要执行拒绝策略.
+
+核心线程预启动在默认的情况下，只有当新任务达到时，才会开始创建和启动核心线程，但我们可以使用 prestartCoreThread() 和 prestartAllCoreThreads() 动态调整
+
+
+
+方法
+作用
+
+
+
+prestartCoreThread
+创建一个空闲任务线程等待任务的到达
+
+
+prestartAllCoreThreads
+创建核心线程数数量的空闲任务线程等待任务的到达
+
+
+线程工厂(ThreadFactory)新线程使用 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/posts/2eb2799e.html" title="spring 编程模型">     <img class="post_bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="spring 编程模型"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2eb2799e.html" title="spring 编程模型">spring 编程模型</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2018-01-01 00:00:00"><i class="far fa-calendar-alt"></i>2018-01-01</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/java/">java</a></span></div><div class="content">面向对象编程契约接口Aware
+从spring容器的IOC中我们知道，所有的bean对于spring容器是无意识的，即你完全可以把spring容器替换成其他的容器而不需要改变你的代码，并且bean之间也是没有耦合的，如果我们需要对spring有意识，也就是我们的业务可能需要用到spring底层的一些功能，那么就需要spring提供的一系列XXXAware接口。
+使用了spring aware 你的bean将会和spring框架耦合，使用spring aware的目的就是为了让bean获取spring容器的服务。
+spring 提供的aware接口:
+
+
+
+
+接口
+说明
+使用场景
+
+
+
+ApplicationContextAware
+能获取application context调用容器的服务。可以在bean中得到bean所在的应用上下文，从而直接在bean中使用上下文的服务
+
+
+
+ApplicationEventPublisherAware
+应用事件发布器，在bean中可以得到应用上下文的事件发布器，从而可以在bean中发布应用上下文的事件
+
+
+
+BeanClassLoaderAware ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/2/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">詹增锦</div><div class="author-info__description">专注Java curd</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">文章</div><div class="length_num">29</div></a></div><div class="card-info-data-item is-center">      <a href="/tags"><div class="headline">标签</div><div class="length_num">6</div></a></div><div class="card-info-data-item is-center">     <a href="/categories"><div class="headline">分类</div><div class="length_num">4</div></a></div></div><div class="card-info-bookmark is-center"><button class="button--animated" id="bookmark-it" title="加入书签"><i class="fas fa-bookmark"></i><span>加入书签</span></button></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zhanshuran" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:zhanzengjin@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">java 菜鸟学习中</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-recent-item"><div class="aside-recent-post"><a href="/posts/bc4026ac.html"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="7月-基金-法律3" alt="7月-基金-法律3"/></div><div class="aside-post-title"><div class="aside-post_title" href="/posts/bc4026ac.html" title="7月-基金-法律3">7月-基金-法律3</div><time class="aside-post_meta post-meta__date" title="发表于 2020-10-22 00:00:00">2020-10-22</time></div></a></div><div class="aside-recent-post"><a href="/posts/55238399.html"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="7月-基金-法律5" alt="7月-基金-法律5"/></div><div class="aside-post-title"><div class="aside-post_title" href="/posts/55238399.html" title="7月-基金-法律5">7月-基金-法律5</div><time class="aside-post_meta post-meta__date" title="发表于 2020-10-22 00:00:00">2020-10-22</time></div></a></div><div class="aside-recent-post"><a href="/posts/2224b30f.html"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="7月-基金-法律4" alt="7月-基金-法律4"/></div><div class="aside-post-title"><div class="aside-post_title" href="/posts/2224b30f.html" title="7月-基金-法律4">7月-基金-法律4</div><time class="aside-post_meta post-meta__date" title="发表于 2020-10-22 00:00:00">2020-10-22</time></div></a></div><div class="aside-recent-post"><a href="/posts/97d78432.html"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="7月-基金-基础2" alt="7月-基金-基础2"/></div><div class="aside-post-title"><div class="aside-post_title" href="/posts/97d78432.html" title="7月-基金-基础2">7月-基金-基础2</div><time class="aside-post_meta post-meta__date" title="发表于 2020-10-22 00:00:00">2020-10-22</time></div></a></div><div class="aside-recent-post"><a href="/posts/e0d0b4a4.html"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="7月-基金-基础3" alt="7月-基金-基础3"/></div><div class="aside-post-title"><div class="aside-post_title" href="/posts/e0d0b4a4.html" title="7月-基金-基础3">7月-基金-基础3</div><time class="aside-post_meta post-meta__date" title="发表于 2020-10-22 00:00:00">2020-10-22</time></div></a></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Java/"><span class="card-category-list-name">Java</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java/"><span class="card-category-list-name">java</span><span class="card-category-list-count">10</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/mysql/"><span class="card-category-list-name">mysql</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%9F%BA%E9%87%91/"><span class="card-category-list-name">基金</span><span class="card-category-list-count">16</span></a></li>
+                       
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/java/" style="font-size: 20.5px; color: #99a5b6">java</a> <a href="/tags/mysql/" style="font-size: 17.5px; color: #999da3">mysql</a> <a href="/tags/spring/" style="font-size: 19px; color: #99a1ac">spring</a> <a href="/tags/%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/" style="font-size: 16px; color: #999">内存模型</a> <a href="/tags/%E5%9F%BA%E7%A1%80/" style="font-size: 22px; color: #99a9bf">基础</a> <a href="/tags/%E6%B3%95%E5%BE%8B/" style="font-size: 22px; color: #99a9bf">法律</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">16</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/02/"><span class="card-archive-list-date">二月 2019</span><span class="card-archive-list-count">6</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/01/"><span class="card-archive-list-date">一月 2019</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2018/01/"><span class="card-archive-list-date">一月 2018</span><span class="card-archive-list-count">5</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">文章数目 :</div><div class="webinfo-article-count">29</div></div><div class="webinfo-item"><div class="webinfo-site-wordcount-name">本站总字数 :</div><div class="webinfo-site-wordcount">318.5k</div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">本站访客数 :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">本站总访问量 :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By 詹增锦</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><button class="translate_chn_to_cht" id="translateLink" title="简繁转换">簡</button><button id="darkmode" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="https://cdn.jsdelivr.net/npm/typed.js"></script><script>var subtitleEffect = true
+if (subtitleEffect) { 
+  var typed = new Typed("#subtitle", {
+    strings: "hello worrld,Never put off till tomorrow what you can do today".split(","),
+    startDelay: 300,
+    typeSpeed: 150,
+    loop: false,
+    backSpeed: 50
+  })
+} else {
+  document.getElementById("subtitle").innerHTML = 'hello worrld'
+}</script></body></html>

@@ -1,0 +1,1294 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>7月-基金-基础4 | 个人博客</title><meta name="description" content="考试"><meta name="keywords" content="基础"><meta name="author" content="詹增锦"><meta name="copyright" content="詹增锦"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://www.javacurd.com/posts/7eb42107.html"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="7月-基金-基础4"><meta property="og:url" content="http://www.javacurd.com/posts/7eb42107.html"><meta property="og:site_name" content="个人博客"><meta property="og:description" content="考试"><meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><meta property="article:published_time" content="2020-10-21T16:00:00.000Z"><meta property="article:modified_time" content="2020-10-21T16:00:00.000Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="prev" title="7月-基金-基础8" href="http://www.javacurd.com/posts/77026d2c.html"><link rel="next" title="7月-基金-基础5" href="http://www.javacurd.com/posts/9b31191.html"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true
+  }</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 4.2.1"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">29</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">6</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fas fa-list"></i><span> Li清单</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#单选题-共100题-每小题1分-共100分-。以下备选项中只有一项最符合题目要求-不选、错选均不得分。"><span class="toc-number">1.</span> <span class="toc-text">单选题(共100题,每小题1分,共100分)。以下备选项中只有一项最符合题目要求,不选、错选均不得分。</span></a></li></ol></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">个人博客</a></span><span class="pull-right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fas fa-list"></i><span> Li清单</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">7月-基金-基础4</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-10-22 00:00:00"><i class="far fa-calendar-alt fa-fw"></i> 发表于 2020-10-22</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-10-22 00:00:00"><i class="fas fa-history fa-fw"></i> 更新于 2020-10-22</span></time><span class="post-meta__categories"><span class="post-meta__separator">|</span><i class="fas fa-inbox fa-fw post-meta__icon"></i><a class="post-meta__categories" href="/categories/%E5%9F%BA%E9%87%91/">基金</a></span></div><div class="meta-secondline"> <span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta__icon"></i><span>字数总计:</span><span class="word-count">18.1k</span><span class="post-meta__separator">|</span><i class="far fa-clock fa-fw post-meta__icon"></i><span>阅读时长: 55 分钟</span></span></div><div class="meta-thirdline"><span class="post-meta-pv-cv"><span class="post-meta__separator">|</span><i class="far fa-eye fa-fw post-meta__icon"></i><span>阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h4 id="单选题-共100题-每小题1分-共100分-。以下备选项中只有一项最符合题目要求-不选、错选均不得分。"><a href="#单选题-共100题-每小题1分-共100分-。以下备选项中只有一项最符合题目要求-不选、错选均不得分。" class="headerlink" title="单选题(共100题,每小题1分,共100分)。以下备选项中只有一项最符合题目要求,不选、错选均不得分。"></a>单选题(共100题,每小题1分,共100分)。以下备选项中只有一项最符合题目要求,不选、错选均不得分。</h4><blockquote>
+<p>1、(单选题)用复利法计算第n月期末终值的计算公式是()。</p>
+</blockquote>
+<ul>
+<li>A,FV=PVX (1+i) n</li>
+<li>B.PV=FVX (1+i) n</li>
+<li>C.FV=PVX(1+i×n)</li>
+<li>D.PY=FVX(1+i×n)</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A,你的答案:A,回答正确。<br><code>解析</code><br>第n期期末终值的一般计算公式为FV=PVx(1+i)n。式中:FV表示终值,即在第n年年末的货币终值;n表示年限;<br>年利率;PV表示本金或现值。</p></span></div>
+
+<blockquote>
+<p>2、(单选题)关于两种资产收益相关系数的取值范围,下列说法中正确的是()</p>
+</blockquote>
+<ul>
+<li>A.-1到0之间</li>
+<li>B.任何实数</li>
+<li>C.0到1之间</li>
+<li>D.-1到1之间</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>相关系数总处于+1和-1之间.</p></span></div>
+
+<blockquote>
+<p>3、(单选题)下列属于利润表作用的是()。</p>
+</blockquote>
+<ul>
+<li>A.反映企业某-时点的财务状况</li>
+<li>B.反映企业某一时期的财务状况</li>
+<li>C.反映企业某一时点的经营成果</li>
+<li>D.反映企业某一时期的经营成果</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>利润表,也称损益表,反映一定时期(如一个会计季度或会计年度)的总体经营成果,揭示企业财务状况发生变动的直接<br>原因。</p></span></div>
+
+<blockquote>
+<p>4.(单选题)流动比率可以看成是流动资产对于流动负债的覆盖率。流动比率(),意味着即使流动资产只有一半能在短期内变现,企业也可其<br>短期债务。</p>
+</blockquote>
+<ul>
+<li>A.小于1</li>
+<li>B.大于1</li>
+<li>C.小于0.5</li>
+<li>D.大于2</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>流动比率可看成是流动资产对于流动负债的覆盖率。流动比率大于2,意味着即使流动资产只有一半能在短期内变现,企业<br>七可以足额偿付其短期使务,这是企业的短期使权人所希望看到的。</p></span></div>
+
+<blockquote>
+<p>5、(单选题)一家企业的应收账款周转率是7,则该企业收回一次账面上的全部应收账款平均需要花()天。</p>
+</blockquote>
+<ul>
+<li>A.50</li>
+<li>B.51</li>
+<li>C.53</li>
+<li>D.54</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C<br><code>解析</code><br>应收账款周转天数=365天/应收账款周转率=365/7≈53(天),</p></span></div>
+
+<blockquote>
+<p>6.(单选题))是包含对通货膨胀补偿的利率。</p>
+</blockquote>
+<ul>
+<li>A.无风险利率</li>
+<li>B.实际利率</li>
+<li>C.通货膨胀率</li>
+<li>D.名义利率</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:<br>你的答案:<br>未作答<br><code>解析</code><br>实际利率是指在物价不变且购买力不变的情况下的利率,或是指当物价有变化,扣除通货腰肚补偿以后的利率。名义利率<br>是指包含对通货肢胀补偿的利率,当物价不断上涨时,名义利率比实际利率高。</p></span></div>
+
+<blockquote>
+<p>7、(单选题)某公司从银行贷款200万元,年利率为9%,复利计息,期限为3年,到第3年年末一次偿清,公司应付银行本息共计()</p>
+</blockquote>
+<ul>
+<li>A.259万元</li>
+<li>B.242万元</li>
+<li>C.210万元</li>
+<li>D.254万元</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A,你的答案:<br>未作答<br><code>解析</code><br>应付银行本息=200×(1+9%)3=259(万元)。</p></span></div>
+
+<blockquote>
+<p>8.(单选题)以下资产负债表项目中属于资产项的有()。<br>I.短期负债<br>Ⅱ.应付账款<br>III.预收账款<br>IV.应付票据<br>V.银行存款</p>
+</blockquote>
+<ul>
+<li>A.Ⅱ、III、IV、V</li>
+<li>B. III、IV</li>
+<li>C. M</li>
+<li>D.I、Ⅱ、III、IV</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C<br><code>解析</code><br>I、Ⅱ、IM、IV四项均为流动负债,属于负债项。</p></span></div>
+
+<blockquote>
+<p>9、(单选题)甲公司2019年年末销售收入为3000万元,权益乘数为2,总负债为750万元,销售利润率为5%,则甲公司的资产收益率为()。</p>
+</blockquote>
+<ul>
+<li>A.25%</li>
+<li>B.10%</li>
+<li>C.20%</li>
+<li>D.5%</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B<br><code>解析</code><br>根据公式计算可得:资产总额=权益乘数×所有者权益总额=权益乘数×(资产总额-负债总额)=2×(资产总额) 解<br>得资产总额为1500万元;净利润总额=销售收入总额×销售利润率=3000×5%=150(万元);资产收益率=净产<br>总资产总额=150/1 500=10%。</p></span></div>
+
+<blockquote>
+<p>10(单选题)在一般情况下,优先股票的股息率是()的,其持有者的股东权利受到一定限制。</p>
+</blockquote>
+<ul>
+<li>A.随公司盈利变化而变化</li>
+<li>B.浮动</li>
+<li>c.不确定</li>
+<li>D.固定</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D案<br><code>解析</code><br>优先股的股息率是固定的,在优先股发行时即约定了固定的股息率,无论公司的盈利水平如何变化,在公安化,在公<br>司烈利及剩余财产的分配顺序上,优先股股东先于普通股股东,但是优先股股东的权利是受限制的,通常无表决权,</p></span></div>
+
+<blockquote>
+<p>11、(单选题)下列关于可转换债券价值的说法中正确的是()。</p>
+</blockquote>
+<ul>
+<li>A.可转换债券价值=纯梓债券价值-转换权利价值</li>
+<li>B.股价上升,转换价值下降</li>
+<li>C.在股价很低时,可转债的价值主要体现了固定收益类证券的属性</li>
+<li>D.可转债的价值必须低于普通债券的价值</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C<br><code>解析</code><br>A项,可转换货券价值公式为,可转换货券价值=纯粹使券价值+转换权利价值。B项, B项, ; ; 相<br>反,若普通股的价格远低于转换价格,则转换价值就很低。D顶,可转使的价值必须高于普通传券的价值,因为可伤券的<br>价值实际上是一个普通伤券加上一个有价值的看涨期权。</p></span></div>
+
+<blockquote>
+<p>12、(单选题)以下说法中错误的是()。</p>
+</blockquote>
+<ul>
+<li>A.上市公司股份回购,只能使用自有资金</li>
+<li>B.上市公司增发新股,不可以面向少数特定机构或个人</li>
+<li>C.上市公司配股,原股东可以放弃配股权</li>
+<li>D.上市公司股票拆分对公司的资本结构和股东权益不会产生任何景响</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B<br><code>解析</code><br>上市公司增发新股跳可以向不特定对象公开幕集(简称增发),也可以非公开发行股票(也称为定向增发),是上市公司<br>向特定对象发行股票的增资方式。</p></span></div>
+
+<blockquote>
+<p>13、(单选题))克服了传统业绩便量指标的缺陷,可以比较准确的反映上市公司在一定时期内为股东创造的价值。</p>
+</blockquote>
+<ul>
+<li>A.经济附加值</li>
+<li>B.市盈率</li>
+<li>C.市销率</li>
+<li>D.市现率</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A<br><code>解析</code><br>经济附加值指标克服了传统业绩衡量指标的缺陷,可以比较准确地反映上市公司在一定时期内为股东创造的价值</p></span></div>
+
+<blockquote>
+<p>14、(单选题)用来计算市现率具体现金流的是()。</p>
+</blockquote>
+<ul>
+<li>A.扣除利息、税款、折旧和摊销之前的收益</li>
+<li>B.本金和利息</li>
+<li>C.净资产</li>
+<li>D.未来收益</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A<br><code>解析</code><br>用来计算市现率的具体现金流通常是扣除利息、税款、折旧和挺销之前的收益(EBITDA).根据公司性质不同,也可采用<br>其他更能体现公司绩效的现金流(如营运现金流或自由现金流)。</p></span></div>
+
+<blockquote>
+<p>15、(单选题)股票估值方法中,内在价值方法可以分为()。</p>
+</blockquote>
+<ul>
+<li>A.股利贴现模型、企业价值信数、市盈率模型</li>
+<li>B.股利贴现模型、经济附加值模型、自由现金流贴现模型</li>
+<li>C.股利贴现模型、企业价值信数、经济附加值模型</li>
+<li>D.市盈率模型、经济附加值模型、市销率模型</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B,你的答案:,未作<br>,未作答<br><code>解析</code><br>内在价值法又称绝对价值法或收益贴现模型,是按照未来现金流的贴现对公司的内在价值进行评估,其具体又分为股利贴<br>现模型自由现金流量贴现模型,经济附加值模型等。</p></span></div>
+
+<blockquote>
+<p>16、(单选题)投资者参与以下投资要求风险溢价最低的是()。</p>
+</blockquote>
+<ul>
+<li>A.某国有银行发行的一年期理财产品</li>
+<li>B.一年期国债</li>
+<li>C.沪深300指数</li>
+<li>D.某股份制银行发行的一年期债券</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B<br><code>解析</code><br>对于投资者而言,权益类证券本身隐含的风险越高,就必须有越多的预期报酬作为投资者承担风险的补借,这一补偿称为<br>*<br>因此,权益类证券的收益率一般高于固定收益类证券(如付券)。而国使的风险较银行使券的风险更低,所以风险滋价最<br>低的是一年期国债。</p></span></div>
+
+<blockquote>
+<p>17、(单选题)关于认购权证持有人的权利,以下说法中正确的是()。<br>I.有参与公司股东大会的权利<br>Ⅱ.有参与公司分红的权利<br>III.有在约定时间按约定价格购入股票的权利<br>IV.有放弃行权的权利</p>
+</blockquote>
+<ul>
+<li>A.II、III</li>
+<li>B.II、III、IV</li>
+<li>C.I、II,III、IV</li>
+<li>D.III、IV</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>权证是指标的证券发行人或其以外的第三人发行的,约定在规定期间内或特定到期日,持有人有权按约发行人购<br>买或出售标的证券,或以现金结算方式收取结算差价的有价证券。按照持有人权利的性质分类,权证可分为认购权证和<br>洁权证,其中认购权证近似于看涨期权,行权时其持有人可按照约定的价格购买约定数量的标的资产。</p></span></div>
+
+<blockquote>
+<p>13、(单选题)关于系统性风险和非系统性风险,以下说法中错误的是()。</p>
+</blockquote>
+<ul>
+<li>A.非系统性风险可通过分散化投资来降低</li>
+<li>B.利率风险、汇率风险、通胀风险、信用风险等属于系统性风险</li>
+<li>C.非系统性风险通常由个别上市公司的特殊因素所导致</li>
+<li>D.系统性风险通常由宏观层面的因素所导致,如政治因素、宏观经济因素等</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B<br><code>解析</code><br>可以通过构造资产组合分散掉的风险称为非系统性风险,不能通过构造资产组合分散掉的风险称为原统性<br>险是由经济环境因素的变化引起的整个金融市场的不确定性的加强,主要包括经济增长、利率、汇率与物价<br>因素的干扰等:非系统性风险是由于公司特定经营环境或特定事件变化引起的不确定性的加强,只对个别公司的证券产生<br>影响,是公司特有的风险,主要包括财务风险、经营风险和流动性风险。B项,信用风险属于非系统性风险。</p></span></div>
+
+<blockquote>
+<p>19、(单选题)若一只股票每股市价10元,每股净资产2元,每股收益0.5元,则这只股票的市盈率是()。</p>
+</blockquote>
+<ul>
+<li>A.20</li>
+<li>B.0.2</li>
+<li>C.5</li>
+<li>D.40</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A<br><code>解析</code><br>市盈率指标表示股票价格和每股收益的比率。根据公式计算:市盈率=每股价格/每股收益=10/0.5=20.5=20</p></span></div>
+
+<blockquote>
+<p>20(单选题)关于风险和收益关系,以下表述错误的是()。</p>
+</blockquote>
+<ul>
+<li>A.投资产品的风险高,意味着投资产品的收益波动大</li>
+<li>B.投资者承拍风险期望得到更高的风险报酬</li>
+<li>C.投资产品的风险高,意味着投资产品的实际收益率高</li>
+<li>D.金融市场上风险与收益常常是相伴而生的</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C<br>你的答案:<br>未作答<br><code>解析</code><br>风险较高的权益类证券、风险较高的公司对应着一个较高的风险溢价,其期望收益率一般也较高,但这并不意味着实际收<br>益率高。</p></span></div>
+
+<blockquote>
+<p>21、(单选题)不属于普通股股票的收益的是()。</p>
+</blockquote>
+<ul>
+<li>A.股息</li>
+<li>B.红利</li>
+<li>C.资本利得</li>
+<li>D.定期利息</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:<br>你的答案:<br>未作答<br><code>解析</code><br>股票的收益主要有两类:(1)股息和红利,认购股票后,持有者即对发行公司享有经济权益,可从公司领取股息和分享公<br>司的红利。(2)资本利得,股票持有者可以持股票到市场上进行交易,当股票的市场价格高于买入价格时,卖出股票就可<br>以赚取价差收益,这种价差收益称为资本利得。</p></span></div>
+
+<blockquote>
+<p>22、(单选题)货币市场产生于信用活动,其交易价格为()。</p>
+</blockquote>
+<ul>
+<li>A.汇率</li>
+<li>B.利率</li>
+<li>C.存款准备金率</li>
+<li>D.超储率</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B<br><code>解析</code><br>货币市场工具产生于信用活动,交易价格为利率,是固定收益证券的一部分。</p></span></div>
+
+<blockquote>
+<p>23 (单选题)若某附息国债面值为100元,票面利率为8%,市场利率为5%,期限2年,每年付息一次,该债券内在价值为()。</p>
+</blockquote>
+<ul>
+<li>A.108.58元</li>
+<li>B.105.58元</li>
+<li>C.110.85元</li>
+<li>D.90.85元</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B<br>你的答案:<br>未作答<br><code>解析</code><br>使券的内在价值=8/(1+5%)+108/(1+5%)2=105.58(元)。</p></span></div>
+
+<blockquote>
+<p>24、(单选题)关于回购协议,以下表述中错误的是()。</p>
+</blockquote>
+<ul>
+<li>A.国债回购市场存在场内交易市场和场外交易市场</li>
+<li>B.正回购方存在信用风险,逆回购方不存在信用风险</li>
+<li>C.中国人民银行可将回购协议作为工具进行公开市场操作</li>
+<li>D.国债回购可以分为质押式回购和买断式回购</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B<br>你的答案:<br>未作答<br><code>解析</code><br>回购协议的正回购方和逆回购方都存在信用风险,主要表现为:(1)到期时,证券的出让方(正回购方)无法按约是价格<br>赎回,证券的受让方(逆回购方)只能保留作为抵押品的证券,此时,若适逢利率上升,则该抵押品价格下降,抵押品的<br>价值便低于出借资金的价值,容户蒙受损失。(2)到期时,证券的受让方(逆回购方)不愿意按约定价格将抵押的证券回<br>售给证券的出让方(正回购方),此类信用风险一般发生在利率下跌,抵押品价格上涨的情形下。</p></span></div>
+
+<blockquote>
+<p>25、(单选题)以下关于零息债券的描述中正确的是()。</p>
+</blockquote>
+<ul>
+<li>A.溢价方式发行,到期按债券面值偿还本金</li>
+<li>B.贴现方式发行,到期按票面利息偿还本金和利息</li>
+<li>c.贴现方式发行,到期按债券面值偿还本金</li>
+<li>D.溢价方式发行,到期按票面利息偿还本金和利息</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C<br><code>解析</code><br>零息使券是一种以低于面值的贴现方式发行,不支付利息,到期按使券面值催还的传券,使券发行价格与面值之间的差题<br>就是投资者的利息收入。</p></span></div>
+
+<blockquote>
+<p>26、(单选题)关于债券到期收益率,以下表述错误的是()。</p>
+</blockquote>
+<ul>
+<li>A.到期收益率考虑了息票利息收入</li>
+<li>B.到期收益率表示投资者按照票面价格购买债券并持有到期可获得的年平均收益率</li>
+<li>C.到期收益率是把未来的现金流折算成现值,使之等于债券价格的贴现率</li>
+<li>D.到期收益率考虑了货币的时间价值</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B<br><code>解析</code><br>使券到期收益率相当于投资者按照当前市场价格购买使券并目一直持有至到期可获得的年平均收益率。其中,到期收益率<br>隐含两个重要假设:(1)投资者持有至到期。(2)利息再投资收益率不变。</p></span></div>
+
+<blockquote>
+<p>27、(单选题)某日A银行在银行间债券市场做了一笔质押式正回购,融入资金1000万元,回购率5%,实际占款天数73天。到期结算日<br>方支付的金额为()万元。</p>
+</blockquote>
+<ul>
+<li>A.1010</li>
+<li>B.1 000</li>
+<li>C.1 100</li>
+<li>D.1001</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A,你的答案:<br>未作答<br><code>解析</code><br>回购价格=本金x(1+回购时应付的利率x回购协议的期限/360)=1000×(1+5%x73/360)=1010(万元).</p></span></div>
+
+<blockquote>
+<p>28.(单选题)债券预期的到期收益率与具有相同期限和票面利率的无风险债券的到期收益率之间的差都称为()。</p>
+</blockquote>
+<ul>
+<li>A.期限结构</li>
+<li>B.信用利差</li>
+<li>C.信用评级</li>
+<li>D.风险溢价</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>为度量违约风险与投资收益率之间的关系,将某一风险使券的预期到期收益率与某一具有相同期限和票面利率的元风险使<br>券的到期收益率之间的差额,称为风险溢价。</p></span></div>
+
+<blockquote>
+<p>29、(单选题)关于收益率曲线,以下表述中正确的是()。</p>
+</blockquote>
+<ul>
+<li>A.一般地,短期债券倾向于比长期债券提供更高的收益率</li>
+<li>B.描述债券当期收益率和市场价格之间关系的曲线</li>
+<li>C.相同风险等级的债券,到期期限和到期收益率存在负相关性</li>
+<li>D.描述债券到期收益率和到期期限之间关系的曲线</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br>你的答案:<br><code>解析</code><br>A项,一般规则是:长期使券倾向于比短期的有相同质量的使券提供更高的收益率;B项,描述使券到期收益率和到期期限<br>之间关系的曲线称为收益率曲线,用来描述利率期限结构;C顶,处于相同风险等级的传养,到期收益率之间收益率之间<br>存在显著的正相关性。</p></span></div>
+
+<blockquote>
+<p>30、(单选题)浮动利率的表达式是()</p>
+</blockquote>
+<ul>
+<li>A.浮动利率=银行定期存款利率+利差</li>
+<li>B.浮动利率=基准利率+利差</li>
+<li>C.浮动利率=基准利率-利差</li>
+<li>D.浮动利率=银行定期存款利率-利率</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B<br><code>解析</code><br>浮动利率使券和固定利率传券的主要不同是其票面利率不是固定不变的,而通常与一个基佳利率挂钩,在其基础上加上利<br>差(可正可负)以反映不同使券发行人的信用。浮动利率可以表达为:浮动利率=基础利率+利差。</p></span></div>
+
+<blockquote>
+<p>31、(单选题)下列关于行生工具风险的表述中错误的是()。</p>
+</blockquote>
+<ul>
+<li>A.我国沪深300指数价格走势会影响股指期货沪深300指数合约的价格走势</li>
+<li>B.因为交易对手无法按时付款或者按时交制会带来结算风险</li>
+<li>C.衍生工具交易双方中某方违约的风险属于流动性风险</li>
+<li>D.期货保证金为合约金额的5%,贝可以控制20倍于所投资金额的合约资产</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C<br><code>解析</code><br>衍生工具交易双方中某方违约的风险属于违约风险;因为缺少交易对手而不能平仓或变现的风险为流动性风险。</p></span></div>
+
+<blockquote>
+<p>32(单选题)以下哪类投资者的参与使套期保值能够顺利进行?()</p>
+</blockquote>
+<ul>
+<li>A.战略投资者</li>
+<li>B.风险投资</li>
+<li>c.另类投资者</li>
+<li>D.投机者</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>投机者是期货市场的重要组成部分,是期货市场必不可少的润调剂。投机交易增强了市场的流动性,承担了套期保值交易<br>转移的风险,是期货市场正常运营的保证。正是因为有投机者参与,秦期保值才能顺利进行,从而使期货市场具有经济功<br>能</p></span></div>
+
+<blockquote>
+<p>33.(单选题)下列关于期货交易制度的说法中,错误的是()。</p>
+</blockquote>
+<ul>
+<li>A.任何期货交易者必须按其买入或卖出期货合约价值的一定比例交纳保证金</li>
+<li>B.对冲平仓是指持仓者在到期日之前买卖与持仓合约品种、数量相同但方向相反的期货</li>
+<li>C.期货交易执行盯市制度,进行逐日结算</li>
+<li>D.期货的交割只能现金交割,而不能实物交割</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>期货的交制分为实物交制和现金结算两种形式。如果合约在到期目没有对冲,则一般是交制实物商品的,如小麦或一笔外<br>汇等。有些金融期货合约的标的资产不方便或不可能进行有形交割,只能以现金结算。</p></span></div>
+
+<blockquote>
+<p>334、(单选题)期货市场风险管理功能是通过()实现的。</p>
+</blockquote>
+<ul>
+<li>A.买空</li>
+<li>B.套期保值</li>
+<li>C.建仓</li>
+<li>D.卖空</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B<br><code>解析</code><br>期货市场的最基本的功能就是风险管理,具体表现为利用商品期货管理价格风险、利用外汇期货管理汇率风险、利用利率<br>期货管理利率风险以及利用股指期货管理股票市场系统性风险。期货市场风险管理的功能是通过套期保值来实现的</p></span></div>
+
+<blockquote>
+<p>35.(单选题)以下风险中属于系统性风险的一共有()种<br>I.夹行加息导致国债价格下跌<br>Ⅱ.汇率波动导致海外资产价格波动<br>III.局部冲突导致冲突国金融市场动荡<br>IV.史行采取紧缩性财政政策调整经济结构,导致经济增速放线</p>
+</blockquote>
+<ul>
+<li>B.4</li>
+<li>C.3</li>
+<li>D.1</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B<br><code>解析</code><br>系统性风险,也可称为市场风险,是由经济环境因素的变化引起的整个金融市场的不确定性的加强,其中击是属于全面性<br>的,主要包括经济增长,利率,汇率与物价波动以及政治因素的干扰等。</p></span></div>
+
+<blockquote>
+<p>36、(单选题)按照衍生工具的产品形态,衍生工具可分为()。</p>
+</blockquote>
+<ul>
+<li>A.独立行生工具和嵌入式衍生工具</li>
+<li>B.货币衍生工具和利率衍生工具</li>
+<li>C.股权类产品的衍生工具和商品衍生工具</li>
+<li>D.信用衍生工具和其他衍生工具</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A<br><code>解析</code><br>按照衍生工具的产品形态分类,衍生工具可以分为独立行生工具和嵌入式行生工具,独立行生工具指本身即为独立存在的<br>金融合约,例如期权合约、期货合约或互换合约等。磁入式衍生工具指嵌入非衍生合约(简称主合约)中的行生工具,该<br>衍生工具使主合约的部分或全部现金流量将按照特定变量的变动而发生调整。B、C、D=巧为按行生工具合约标的资产分<br>迷。</p></span></div>
+
+<blockquote>
+<p>37、(单选题)关于期货合约要素,下列叙述不正确的是()。</p>
+</blockquote>
+<ul>
+<li>A.交易期货合约时,只能以交易单位的整数信进行买卖</li>
+<li>B.期货合约的交易时间是由交易者决定的</li>
+<li>C.期货的合约月份由期货交易所规定,交易者可选择不同合约月份的期货合约</li>
+<li>D.如果过了最后交易日仍未做对冲,就必须进行实物交割或现金结算</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B<br><code>解析</code><br>期货合约的交易时间是固定的。每个交易所对交易时间都有严格的规定,不同的交易所可以规定不同的交易时间</p></span></div>
+
+<blockquote>
+<p>33、(单选题)在价格朝买入合约不利方向变动时,初始保证金除去用于弥补亏损外,剩下的余额领达到的最低水平为()。</p>
+</blockquote>
+<ul>
+<li>A.交易保证金</li>
+<li>B.初始保证金</li>
+<li>C.维持保证金</li>
+<li>D.结算准备金</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C<br><code>解析</code><br>国际上各期货交易所保证金分为初始保证金和维持保证金。初始保证金是初次合约成交时应交纳的说证金,相当于我国的<br>交易保证金或保证金;维持保证金是在价格朝买入合约不利方向变动时,初始保证金除去用于弥去用于弥补亏损外,剩下的余额<br>达到的最低水平。</p></span></div>
+
+<blockquote>
+<p>39、(单选题)下列关于金融其期货与金融其期权的比较,说法正确的是()。</p>
+</blockquote>
+<ul>
+<li>A.期货合约和期权合约都通过对冲相抵消</li>
+<li>B.金融其期货与金融其期交易双方的权利与义务是对称的</li>
+<li>C.期货合约用保证金交易,而期权合约不用保证金交易</li>
+<li>D.金融期货交易双方均需开立保证金账户,金融期权的买方无需开立保证金账户,也无需缴纳保证金</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>A项,期货合约绝大多数通过对冲相抵消,而期权合约则是买方根据当时的情况判断行权对自己是否有利来决定行权与<br>否;B项,期货合约包括买卖双方在未来应尽的义务,与此相反,期权合约只有卖方在未来有义务;C顶,期货合约通常采<br>用保证金交易,有明显的杠杆效应,期权合约中买方需要支付期权费,卖方需要缴纳保证金,也存在杠杆效应.</p></span></div>
+
+<p>40<br>(单选题)A公司、B公司想借入3年期100万元的借款,A公司融资成本分别为固定利率8%、浮动利率SHIBOR+0.5%,B公司融资成本分别率10%,<br>动利率SHIBOR+1%,双方可以通过()降低融资成本。</p>
+<ul>
+<li>A.货币互换</li>
+<li>B.利率互换</li>
+<li>C.股权互换</li>
+<li>D.信用违约互换</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B<br><code>解析</code><br>利率互换,是指互换合约双方同意在约定期限内按不同的利息计算方式分期向对方支付由币种相同的名义本金额所确定的<br>利息,双方进行利率互换的主要原因是双方在固定利率和浮动利率市场上分别具有比较优势。本题中A公司在固定利率<br>场上具有比较优势,B公司在浮动利率市场上有比较优势,双方利用各自的比较优势为对方借款,然后进行互换,从而达行互换,<br>到共同降低筹资成本的目的。</p></span></div>
+
+<blockquote>
+<p>41、(单选题)以下选项中,属于基础原材料类大宗商品的有()。<br>I.钢铁、铜、铝<br>Ⅱ.橡胶、黄金、白银<br>III.玉米、大豆、棕榈油<br>IV.铅、锌、铁矿石</p>
+</blockquote>
+<ul>
+<li>A.II、IV</li>
+<li>B.II、III</li>
+<li>C.I、IV</li>
+<li>D.I、Ⅱ</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C<br><code>解析</code><br>基础原材料类大宗商品,主要包括钢铁、铜、铝、铝、锌、镍、镐、橡胶、铁矿石等。通常基础原材料大宗商品以大批量<br>进行交易。基础原材料类大宗商品是制造业发展的基础,与生产经营活动密切相关。黄金、白银是贵金属炎大宗商品;玉<br>米、大豆、棕榈油是农产品类大宗商品。</p></span></div>
+
+<blockquote>
+<p>42、(单选题)关于并购投资的表述,错误的是()。</p>
+</blockquote>
+<ul>
+<li>A.主要对象是成熟且具有稳定现金流并且呈现出稳定增长趋势的企业</li>
+<li>B.通过控股来确立市场地位,提升企业的内在价值</li>
+<li>C.管理层收购是应用最广泛的形式</li>
+<li>D.是指专门进行企业并购的基金</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C,你的答案:<br>未作答<br><code>解析</code><br>并购投资包含多种不同类型,如杠杆收购、管理层收购等。杠杆收购是应用最广泛的形式。</p></span></div>
+
+<blockquote>
+<p>43、(单选题)房地产投资信托基金收益的影响因素不包括()。</p>
+</blockquote>
+<ul>
+<li>A.汇率水平</li>
+<li>B.利率水平</li>
+<li>C.股市景气度</li>
+<li>D.房地产市场景气度</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A,你的答案:,未作<br>未作答<br><code>解析</code><br>一般房地产投资信托基金的收入比传统证券中的债券要高,比股票要低,影响其收益的因素主要包括利率水平,股市景气<br>度和房地产市场景气度。</p></span></div>
+
+<blockquote>
+<p>44、,(单选题)以下属于零售房地产的是()</p>
+</blockquote>
+<ul>
+<li>A.购物中心</li>
+<li>B.写字楼</li>
+<li>C.酒店</li>
+<li>D.养老院</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A<br><code>解析</code><br>商业房地产投资以出租而赚取收益为目的,其投资对象主要包括写字楼、零售房地产等设施。零售房地产是指如购物中<br>心、商业购物中心和其他用于零售目的而建设的建筑物。所有者将房地产出租给零售商进行经营。</p></span></div>
+
+<blockquote>
+<p>45、(单选题)关于投资组合管理的基本步骤,以下选项错误的是()。</p>
+</blockquote>
+<ul>
+<li>A.投资管理人结合投资政策说明书和资本市场预期末决定各类目标资产的配置</li>
+<li>B.投资管理人对多种资产类别的长期风险和收益特征进行预测</li>
+<li>C.投资规划的首要任务就是优化投资组合</li>
+<li>D.投资政策说明书是所有投资决策制定的指导性文件</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C案<br><code>解析</code><br>投资规划的首要任务是了解客户需求,确认并量化投资者的投资目标和投资限制。</p></span></div>
+
+<blockquote>
+<p>46、(单选题)以下不属于基金公司投资决策委员会职责的是()。</p>
+</blockquote>
+<ul>
+<li>A.确定不同管理级别的操作权限</li>
+<li>B.制定投资组合的具体方案</li>
+<li>C.审订公司投资管理制度的业务流程</li>
+<li>D.对基金公司重大投资活动进行管理</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B<br><code>解析</code><br>投资决策委员会是基金管理公司管理基金投资的最高决策机构,由各个基金公司自行设立,是非常设的议事机构。<br>第委员会应在遵守国家有关法律法规,公司规章制度的前提下,对基金公司各项重大投资活动进行管理,审订会司投资管理<br>理制度和业务流程,并确定不同管理级别的操作权限。</p></span></div>
+
+<blockquote>
+<p>47、(单选题)以下关于投资政策说明书的表述中错误的是()。</p>
+</blockquote>
+<ul>
+<li>A.投资政策说明书内容包括投资目标、投资决策流程、投资范围等</li>
+<li>B.投资政策说明书在制定后不得变更</li>
+<li>C.制定投资政策说明书是进行投资组合管理的基础</li>
+<li>D.投资政策说明书有助于合理评估投资管理人的投资业绩</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B案<br><code>解析</code><br>由于投资政策说明书中涉及的投资者需求会不断变化,投资政策说明书在制定之后也不变,需要定期或不定,需要期地<br>进行重新审核与更新,以确保与投资者需求的变化保持一致。</p></span></div>
+
+<blockquote>
+<p>48.(单选题)风险承担意愿反映了投资者的()。</p>
+</blockquote>
+<ul>
+<li>A.资产负债状况</li>
+<li>B.风险厌恶程度</li>
+<li>C.投资期限</li>
+<li>D.现金流入情况</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B<br><code>解析</code><br>承担风险的意愿是投资者的主观愿望,反映了投资者的风险厌恶程度,它取决于投资者的心理状况及其当时所处的境况。</p></span></div>
+
+<blockquote>
+<p>49、(单选题)机构投资者不可以采用的资产管理方式是()。</p>
+</blockquote>
+<ul>
+<li>A.内部管理</li>
+<li>B.外部管理</li>
+<li>C.混合管理</li>
+<li>D.将机构资产存放于银行活期账户</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>机构投资者资产管理的方式有:(1) 聘请专业投资人员对投资进行内部管理。(2)将资金委托投资于一个或多个外部资<br>产管理公司。(3)采用混合的模式,有能力管理的一部分资产交由内部管理,而超出自身管理能力的一部分资产则交由外<br>部管理。</p></span></div>
+
+<blockquote>
+<p>50、(单选题)基金公司()是为基金投资运作提供支持,主要从事宏观、行业和上市公司投资价值研究分析的部门。</p>
+</blockquote>
+<ul>
+<li>A.交易部</li>
+<li>B.投资部</li>
+<li>C.风险管理部</li>
+<li>D.研究部</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p><code>解析</code><br>研究部是基金投资运作的基础部门,通过对宏观经济形势、行业状况、上市公司等进行详细分析和研究,提出行业资产配<br>置建议,并选出具有投资价值的上市公司建立股票池,向基金投资决策部门提供研究报告及投资计划建议,A项, 交易部<br>是某金投资运作的具体执行部门,负责投资组合交易指令的审核、执行与反馈,它属于基金公司的核心保密区城,其行最<br>严格的保密要求;BI顶,投资部负责根据投资决策委员会制定的投资原则和计划制定投资组合的具体方案,向交易部下达<br>投资指令:C项,风险管理部负责对公司运营过程中产生的或潜在的风险进行有效识别、管理和报告。</p></span></div>
+
+<blockquote>
+<p>51、(单选题)关于半强有效市场,以下表述中错误的是()。</p>
+</blockquote>
+<ul>
+<li>A.内慕交易者可能通过分析内慕信息来获取非法收益</li>
+<li>B.通过对历史股价、成交量等信息进行的技术分析是无效的</li>
+<li>C.通过对公司年报信息进行分析是无效的</li>
+<li>D.通过对公司股票分拆、公司并购等公告信息进行分析是有效的</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D,你的答案:<br>未作答<br><code>解析</code><br>半强有效证券市场的证券价格不仅已经反映了历史价格信息,而且反映了当前所有与公司证券有关的公开有效信息,如盈<br>利预测,红利发放,服票分拆、公司购并等各种公告信息,因此,如果市场是半强有效的,市场参与者就不可能从任何<br>开信息中获取超额利润,这意味着基本面分析方法无效。</p></span></div>
+
+<blockquote>
+<p>52、(单选题)下列关于证券市场线和资本市场线的表述错误的是()。</p>
+</blockquote>
+<ul>
+<li>A.证券市场线能为每一个风险资产进行定价</li>
+<li>B.证券市场线描述了单个资产的风险溢价与市场风险直接的函数关系</li>
+<li>C.资本市场线是基于资本资产定价模型进行定价</li>
+<li>D.资本市场线描述了有效组合的市场溢价与组合标准差之间的函数关系</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C<br><code>解析</code><br>证券市场线是某于资本资产定价模型的,斜率是市场组合的风险溢价,既适用于资产组合,又适用于单个资产,可以用证<br>券市场线来给资产确定一个最合理的预期收益率。</p></span></div>
+
+
+<blockquote>
+<p>53、(单选题)在I基金公司的晨会上,投资经理A提到:“可以通过投资股票、债券、期货等来分散基金的非系统性风险,且也可一定程度上降低系统性风<br>险”;投资经理时外充道:“系统性风险主要受宏观因素影响,应该加强对经济、政治和法律等因素的关注”。关于两人的说法,下列表述正<br>确的是()。</p>
+</blockquote>
+<ul>
+<li>A.两者均正确</li>
+<li>B.A经理的说法错误,B经理的说法正确</li>
+<li>C.两者均不正确</li>
+<li>D.A经理的说法正确,B经理的说法错误</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:</p><p><code>解析</code><br>投资者可以通过持有多种类型的证券以达到分散非系统风险,从而进一步降低整个组合的风险。当组合中资产的数目逐<br>增多的时候,非泵统性风险就会被逐步分散,但是无论资产数目有多少,系统性风险都是固定不变的。系统性风险是由经<br>济环境因素的变化引起的整个金融市场的不确定性的加强,其冲击是属于全面性的,主要包括经济增长,利率、汇率、汇率<br>价波动以及政治因素的干扰等。</p></span></div>
+
+<blockquote>
+<p>54、(单选题)某股票型指数基金跟踪标的为沪深300指数,跟踪误差为0.06%,而同类平均跟踪误差为0.12%,据此,以下判断错误的是()。</p>
+</blockquote>
+<ul>
+<li>A.该基金的基金经理管理能力比同类基金经理的平均水平弱</li>
+<li>B.该基金采取的是被动投资策略</li>
+<li>C.该基金的历史收益率与沪深300指数收益率存在一定程度的偏离</li>
+<li>D.该基金分散了大部分的非系统性风险</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A<br><code>解析</code><br>跟踪误差是度量一个股票组合相对于某基佳组合偏离程度的重要指标。该指标被广泛用于被动投资营理者的业<br>绩考核。作为被动型投资者,其目标就是在成本允许的情况下,尽可能地减少眼踪误差。</p></span></div>
+
+<blockquote>
+<p>55(单选题)关于投资产品的顶期收益,以下表述错误的是()。</p>
+</blockquote>
+<ul>
+<li>A.信用风险较高债券的予预期收益通常高于信用风险较低债券的预期收益</li>
+<li>B.风险资产的预期收益通常高于无风险资产的顶期收益</li>
+<li>C.期限较长债券的预期收益通常高于期限较短债券的预期收益</li>
+<li>D.某投资产品的预期收益为正,则投资者投资该产品不会亏损</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>资产收益率往往是不确定的,期望收益率是收益率的期望值。方差和标准差是估计资产实际收益率与期望收益率之间可能<br>偏离程度的测度方法,方差值越大,实际收益率与预期收益率之间的偏差就越大。D项,那么正误证,也无法保证,也无法保证<br>实际收益为正。</p></span></div>
+
+<blockquote>
+<p>56.(单选题)关于风险与收益的关系,以下表述正确的是()。</p>
+</blockquote>
+<ul>
+<li>A.高风险投资组合的风险和历史收益率呈正相关关系</li>
+<li>B.高风险投资组合的预期收益率一般高于低风险投资组合</li>
+<li>C.投资组合A过去一年的收益高于投资组合B,那么投资组合A的风险高于投资组合B</li>
+<li>D.投资组合A的风险高于投资组合B,那么投资组合A的已实现收益也高于投资组合B</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B<br><code>解析</code><br>马科维茨投资组合理论的基本假设是投资者是庆恶风险的。如果在两个具有相同预期收益率的证券之间进行选择,投资者<br>会选择风险较小的。要让投资者承担更高的风险,必须有更高的预期收益来补做。</p></span></div>
+
+<blockquote>
+<p>57.(单选题)某基金的业绩比较基准为中证全债指数,则以下关于该基金的表述错误的是()。。</p>
+</blockquote>
+<ul>
+<li>A.组合构建需要考虑流动性和杠杆率</li>
+<li>B.属于债券型基金</li>
+<li>c.债券投资比例不受约束</li>
+<li>D.组合构建需要考虑信用结构、期限结构、组合久期</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C<br><code>解析</code><br>该基金的比较基佳中证全使指数是债券指数,说明该基金为使券型基金。作为使券型基金,使券类资产的投资比例通常不<br>低于基金资产总值的80%,不同于股票投资组合,使券投资组合构建还需要考虑信用结构、组合久期、组合久期、流动性<br>和杠杆率等因素。有些机构投资者会在投资政策说明中限制非投资级使券的比例。</p></span></div>
+
+<blockquote>
+<p>58.(单选题)看涨期权的买方预期标的资产的价格在期权有效期内将会()。</p>
+</blockquote>
+<ul>
+<li>A.上涨</li>
+<li>B.下跌</li>
+<li>C.不变</li>
+<li>D.上下波动</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A<br><code>解析</code><br>看张期权是指赋予期权的买方在事先约定的时间以执行价格从期权卖方手中买入一定数量的标的澄<br>买入期权。因为它是人们预期某种标的资产的未来价格上涨时买入的期权,所以被称为看涨期权。</p></span></div>
+
+<blockquote>
+<p>59、(单选题)以下关于战术性资产配置说法错误的是()。</p>
+</blockquote>
+<ul>
+<li>A.战术性资产配置重在管理短期的收益和风险</li>
+<li>B.战术性资产配置是一种事前的、整体的、针对投资者需求的长期规划和安排</li>
+<li>C.战术性资产配置的有效性是存在争议的</li>
+<li>D.运用战术性资产配置的前提是基金管理人能够准确的顶测市场变化,发现单个证券的投资机会,并且能够有效实施动态资产配需方案</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:</p><p><code>解析</code><br>战术资产配置更多地关注市场的短期波动,强调根据市场的变化,运用金融工具,通过择时,调节各大类资产之间的分配<br>七例,来管理短期的投资收益和风险,战术资产配置的周期较短,一般在一年以内。</p></span></div>
+
+<blockquote>
+<p>60、(单选题))不能改变基金贝塔值。</p>
+</blockquote>
+<ul>
+<li>A.调整现金头寸</li>
+<li>B.改变投资风格</li>
+<li>C.同比例增加各项投资</li>
+<li>D.增加债券投资比例</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C<br><code>解析</code><br>CAPM使用β系数来描述资产或资产组合的系统风险大小。β泵数表示资产对市场收益变动的敏<br>收益率和市场组合收益率之间的线性关系,A、B、D三顶均会影响资产收益率,从而改变基金贝培值.</p></span></div>
+
+<blockquote>
+<p>61、(单选题)关于冲击成本,以下表述正确的是()。</p>
+</blockquote>
+<ul>
+<li>A.冲击成本可以看作是购买流动性的成本</li>
+<li>B.冲击成本可以事后精确计量</li>
+<li>C.信息泄露不会导致冲击成本增加</li>
+<li>D.冲击成本可以事先确定</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A<br><code>解析</code><br>B、D两项,作为一种事后计算指标,冲击成本难以精确计量:C顶,信息泄需是导致冲击成本的因素,在交易持行过程<br>中,可能会发生人为的消息泄露,也可能有人从市场价格序列变动中推测出这张单子的存在并跟进,共同推动价格并造成<br>更大的冲击。</p></span></div>
+
+<blockquote>
+<p>62(单选题)某投资者向证券公司融资15 000元,加上自有资金15000元,以150元的价格买入200股某股票, 被没3个月后, 被没3个月后, 被<br>格上涨至165元,那么该笔投资收益率为()。</p>
+</blockquote>
+<ul>
+<li>A.17.85%</li>
+<li>B.11.4%</li>
+<li>C.10%</li>
+<li>D.15.7%</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A<br><code>解析</code><br>3个月后,投资者卖出股票可得到165×200=33 000(元),可盈利33000-15000-15000-15000x(1+8.6%/4)=2<br>677.5(元),收益率=2677.5/15 000=17.85%。</p></span></div>
+
+<blockquote>
+<p>63、(单选题)甲、乙、丙、丁四个投资者,均申报买进x股票,申报价格和申报时间分别为:甲的买进价为10.70元,时间是13:35;乙的买进价为10.40<br>元,时间是13:40;丙的买进价为10.75元,时间为13:55;丁的买进价为10.40元,时间为13:50。则四位投资者交易的优先是</p>
+</blockquote>
+<ul>
+<li>A.丁、乙、甲、丙</li>
+<li>B.丁、乙、丙、甲</li>
+<li>C.丙、甲、丁、乙</li>
+<li>D.丙、甲、乙、丁</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>指令驱动的成交原则如下:(1)价格优先原则。(2)时间优先原则。如果在同一价格上有多笔交易指令,此时会遵<br>循“先到先得”的原则,即买卖方向相同、价格一致的,优先成交委托时间较早的交易。先比较申报价格,可知丙的申报<br>价格最高,甲其次,乙、丁的申报价格相同目低于丙、甲;再比较乙、丁的申报时间,乙先于丁申报,所以乙应优先<br>丁。</p></span></div>
+
+<blockquote>
+<p>64.(单选题)在做市商市场中,证券交易的买价由()给出,证券交易的卖价由()给出</p>
+</blockquote>
+<ul>
+<li>A.做市商;做市商</li>
+<li>B.做市商;投资者</li>
+<li>C.投资者;投资者</li>
+<li>D.投资者;做市商</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A<br><code>解析</code><br>报价驱动中,最为重要的角色就是做市商,因此报价驱动市场也被称为做市商制度。做市商通常由具<br>证券投资法人承担,本身拥有大量可交易证券,买卖双方均直接与做市商交易,而买卖价格则由做市商报出。</p></span></div>
+
+<blockquote>
+<p>65(单选题)关于保证金交易的说法不正确的是()。</p>
+</blockquote>
+<ul>
+<li>A.保证金交易也称为信用交易</li>
+<li>B.保证金除以所投资金额或证券总价值的比率称为保证金率</li>
+<li>C.在我国,保证金交易被称为“融资融券”</li>
+<li>D.所有的证券公司都可以开展此项业务</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>融资融券业务会放大投资收益率或损失率,如同杠杆一样增加了投资结果的波动幅度。为防范融资融券的投资风险,证券<br>交易所对参与融资融券的证券公司做出了严格规定,只有符合一定标准的证券公司才能开展此项目务。</p></span></div>
+
+<blockquote>
+<p>66.(单选题)根据特定的时间间隔在每个时间点上平均下单的算法是()。</p>
+</blockquote>
+<ul>
+<li>A.成交量加权平均价格算法</li>
+<li>B.时间加权平均价格算法</li>
+<li>C.跟量算法</li>
+<li>D.执行缺口算法</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B<br><code>解析</code><br>时间加权平均价格算法是根据特定的时间间隔,在每个时间点上平均下单的算法,旨在使市场影响最小化的同时提供一个<br>平均协行价格。</p></span></div>
+
+<blockquote>
+<p>67、(单选题)投资组合A、B的主动比重分别为30%,60%,且A、B的基准指数相同,可以得出的结论是()。</p>
+</blockquote>
+<ul>
+<li>A.投资组合B与基准的表现差别可能比投资组合A与基准的表现差别大</li>
+<li>B.投资组合A与基准的相关性比投资组合B与基准的相关性要低</li>
+<li>C.市场上涨时,投资组合B-定会跑赢投资组A</li>
+<li>D.市场上涨时,投资组合A一定会跑输投资组合B</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A案<br><code>解析</code><br>主动比重衡量一个投资组合与基佳指数的相似程度。主动比重为0意味着该投资组合实质上是一个指数基金,主动比重<br>100%则意味着该投资组合与基佳完全不同。较高的主动比重意味着投资组合的表现可能会与基别较大。与基别皱大.与基<br>不意味着投资组合一定会跑赢或跑输基佳,投资组合要随赢基础之须在适当的时候以适当的方式偏离基佳。</p></span></div>
+
+<blockquote>
+<p>68.(单选题)截至2016年12月31日,某股票型基金规模18亿元,股票投资总市值10亿元,前十大重仓股票投票总市值3.7亿元,则该基中度为<br>()。</p>
+</blockquote>
+<ul>
+<li>A.20.56%</li>
+<li>B.50%</li>
+<li>C.37%</li>
+<li>D.55.56%</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C<br><code>解析</code><br>前十大重仓股占比是街星持股集中度的常用指标,持股数量越多,基金的投资风险越分散, f-1亩|<br>公式计算可得:前十大重仓股占比=前十大重仓股投资市值/基金股票投资总市值×100%100%=3.7/10×100%</p></span></div>
+
+<blockquote>
+<p>69.(单选题)如果某基金的贝塔系数(),则说明该基金是一只活跃或激进型基金。</p>
+</blockquote>
+<ul>
+<li>A.大于1</li>
+<li>B.等于1</li>
+<li>C.小于1</li>
+<li>D.远远小于1</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A<br><code>解析</code><br>通常使用贝塔系数的大小街量一只股票基金面临的市场风险的大小。如果某基金的贝罐系数大于1,说明该基金是一只活跃<br>或激进型基金;如果某基金的贝塔系数小于1,说明该基金是一只稳定或防御型的基金。</p></span></div>
+
+<blockquote>
+<p>70、(单选题)以下关于下行标准差的局限性,说法正确的是()。</p>
+</blockquote>
+<ul>
+<li>A.只能基于交易数据计算</li>
+<li>B.只能选用O作为目标收益率</li>
+<li>C.若在考察期间表现一直超越目标,将得不到足够的数据点计算下行标准差</li>
+<li>D.无法刻画基金收益率不达目标的风险</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案: C<br><code>解析</code><br>下行标准差的局限性在于,其计算需要获取是够多的收益低于目标的数据。如果投资组合在考案期间表现一直超越目标,<br>该指标将得不到足够的数据点进行计算。</p></span></div>
+
+<blockquote>
+<p>71、(单选题)以下指标不属于股票基金风险的衡量指标的是()。</p>
+</blockquote>
+<ul>
+<li>A.持股集中度</li>
+<li>B.收益率</li>
+<li>C.标准差</li>
+<li>D.贝塔系数</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B<br><code>解析</code><br>常用来反映股票基金风险的指标有标准差、贝塔系数、持股集中度、行业投资集中度、持腰数量等。</p></span></div>
+
+<blockquote>
+<p>72、(单选题)考察行业中各个股票对基金投资组合整体收益的贡献的分析是属于()。</p>
+</blockquote>
+<ul>
+<li>A.相对收益率</li>
+<li>B.绝对收益率</li>
+<li>C.相对收益归因</li>
+<li>D.绝对收益归因</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D案<br><code>解析</code><br>绝对收益归因是考察各个因素对基金总收益的贡献,其本质是对基金总收益的分解。相对收益归因是通过分析基金与比较<br>事在在资产配置,证券选择等方面的差异,来找出基金跑赢或跑输业绩比较基佳的原因。</p></span></div>
+
+<blockquote>
+<p>73、(单选题)与小规模基金相比,同类大规模基金的优势体现在()。<br>I.可以更有效减少非系统性风险<br>Ⅱ.被投资股票的流动性更好<br>III.平均固定成本较低<br>IV.可选择的投资对象范围更广</p>
+</blockquote>
+<ul>
+<li>A.I、II</li>
+<li>B.II、IV</li>
+<li>C.I、III</li>
+<li>D.II、III</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C<br><code>解析</code><br>基金存在一些固定成本,如研究费用和信息获得费用等,与小规模基金相比,规模较大的基金的平均成本更低。同时,规<br>模较大的基金可以有效地减少非系统性风险,但是基金规模过大,对可选择的投资对象、被投资胶票的流动性等都有不利<br>影响。</p></span></div>
+
+<blockquote>
+<p>74、(单选题)关于基金的业绩评价,以下表述错误的是()。</p>
+</blockquote>
+<ul>
+<li>A.黄金主题基金和军工主题基金,基金业绩不具备可比性</li>
+<li>B.偏股型基金和偏债型混合基金,基金业绩不具备可比性</li>
+<li>C.场外货币基金和场内货币基金,基金业绩不具备可比性</li>
+<li>D.大盘风格股票基金和小盘风格股票基金,基金业绩不具备可比性</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C<br><code>解析</code><br>基金业绩评价应将同类基金的风险收益交换效率进行比较,或者对同等风险(同等收益)的基金收益率(风险)进行比<br>较,因为不同基金的风险收益特征不同,单纯地比较基金收益率不具有实质性意义。C项, C项,场外货币基市基币基市基金<br>都属于货币基金,基金业绩具有可比性。</p></span></div>
+
+<blockquote>
+<p>75(单选题)某基金某一年度收益为22%,同期其业绩比较基准的收益为18%,沪深300指数的收益为25%,则该基比较基为25%,则该基比较基为</p>
+</blockquote>
+<ul>
+<li>A.-4%</li>
+<li>B.-1%</li>
+<li>C.4%</li>
+<li>D.-3%</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C<br><code>解析</code><br>基金的相对收益,又叫超额收益,代表一定时间区间内,基金收益超出业绩比较基佳的部分。该基比较基佳的<br>收益=22%-18%=4%。</p></span></div>
+
+<blockquote>
+<p>76(单选题)在现实情况中,影响基金持有区间收益率计算的因素不包括()。</p>
+</blockquote>
+<ul>
+<li>B.基金的投资者在区间内会有电购和赎回,带来资金的进出</li>
+<li>C.在持有期间多次发放股利</li>
+<li>D.基金的历史收益率</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>持有区间所获得的收益通常来源于两部分:资产回报和收入回报。资产回报是指股票,使券、房地产等资产价格的增加/城<br>少;而收入回报包括分红、利息等。现实中,计算基金的持有区间收益率需要考虑更为复杂的情况:(1)基金可能包含<br>不同的证券,每个证券发放红利或利息的时间都不一样。(2)基金的投资者在区间内会有由购和建回,带来雨多的游<br>进出。D顶不直接影响持有区间收益率。</p></span></div>
+
+<blockquote>
+<p>77、单选题)<br>时间加权收益率的计算公式的前提假定为()</p>
+</blockquote>
+<ul>
+<li>A.红利发放后立即存入银行</li>
+<li>B.红利发放后立即以无风险利率投资</li>
+<li>C.红利发放后立即对本基金进行再投资</li>
+<li>D.以上均不正确</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C<br><code>解析</code><br>假定红利发放后立即对本基金进行再投资,目红利以除息前一日的单位净值为计算基制<br>红期间的分段收益率,考察期间的时间加权收益率可由分段收益率连乘得到。</p></span></div>
+
+<blockquote>
+<p>78.(单选题))常用于缓解私募股权投资基金坚急的资金需求。</p>
+</blockquote>
+<ul>
+<li>A.买壳上市</li>
+<li>B.借壳上市</li>
+<li>c.管理层回购</li>
+<li>D.二次出售</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>AB两项,买壳上市或借壳上市是资本运作的一种方式,属于间接上市方法,为不能直接进行IPO的秘游项目提供<br>退出途径:C顶,管理层回购是指私幕股权基金将其所持有的创业企业股权出售给对象企业的管理是从而,D<br>项,二次出售是指私幕股权基金将其持有的项目在私募股权二级市场进行出售的行为,二次出售常常用于缓解私幕股权基<br>金紧急的资金需求。</p></span></div>
+
+<blockquote>
+<p>79、(单选题)办理质押式回购业务时,确定回购利息支出的主要因素包括融资金额、融资利率和()。</p>
+</blockquote>
+<ul>
+<li>A.质押券的信用等级</li>
+<li>B.副业资的结算方式</li>
+<li>C. 融资的天数</li>
+<li>D.质押率</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C<br><code>解析</code><br>在质押式回购中,首期资金结算额=正回购方融入资金数额,到期资金结算额=首期资金结算额×(1+回购利率x实际占款<br>天数/365),即回购利息支出=到期资金结算金额-首期资金结算金额=首期资金结算金额×回购利率x实际占款天数/365<br>公式表明,利息支出主要受融资金额、融资利率以及融资天数的影响。</p></span></div>
+
+<blockquote>
+<p>80.(单选题)债券结算业务系统对每笑债券交易都单独进行结算,一个买方对应一个卖方,当一方遇券或款不足时,系统不进行部分结算的情券结算的情<br>()。</p>
+</blockquote>
+<ul>
+<li>A.净额结算</li>
+<li>B.双边净额结算</li>
+<li>C.多边结算</li>
+<li>D.全额结算</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>全额结算也称逐笔结算,是指结算系统对每笔使券交易都单独进行结算,一个买方对应一个卖方,当一方遇券或款不是<br>时,系统不进行部分结算。</p></span></div>
+
+<blockquote>
+<p>81、(单选题)某日A投资者在场内申购了B货币基金ETF,则该笔交易适用的交收规则是()</p>
+</blockquote>
+<ul>
+<li>A.T+O货银对付担保交收</li>
+<li>B.T+1逐笔非担保交收</li>
+<li>C.T+1货银对付担保交收</li>
+<li>D.T+O逐笔非担保交收</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C<br><code>解析</code><br>我国证券市场中,在多边净额结算方式下,已实现对ETF交易、单市场股票ETF及单市场使券ETF申购与赎回的份额和现<br>营代,微币印F电购与购回等业务进行T+1货银对付担保交收。</p></span></div>
+
+<blockquote>
+<p>82(单选题)可以在银行间债券交易市场开展结算代理业务的金融机构法人需经()批准。</p>
+</blockquote>
+<ul>
+<li>A.中国人民银行</li>
+<li>B.中国国务院</li>
+<li>C.中国银保监会</li>
+<li>D.中国证监会</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A<br><code>解析</code><br>结算代理制度,是指经中国人民银行批准可以开展结算代理业务的金融机构法人,受市场其他参与者的要与者的要托,为其力理<br>券结算业务的制度。</p></span></div>
+
+<blockquote>
+<p>83、(单选题)与净额结算相比全额结算的优点是()。</p>
+</blockquote>
+<ul>
+<li>A.降低市场参与者结算成本</li>
+<li>B.降低流动性需求</li>
+<li>C.提高市场参与者资金使用效率</li>
+<li>D.可评估自身对不同交易对手的风险暴露</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>全额结算的优点在于:(1)由于买卖双方是–对应的,每个市场参与者都可监控自己参与的每一笔交易结算进剧情况,<br>从而评估自身对不同对手方的风险暴露。(2)有利于保持交易的稳定和结算的及时性,降低结算本金风险。</p></span></div>
+
+<blockquote>
+<p>84、(单选题)下列不属于托管人委托境外资产托管人资格的是()。</p>
+</blockquote>
+<ul>
+<li>A.最近3年没有受到监管机构的重大处罚</li>
+<li>B.托管资产规模不少于1000亿美元或等值货币</li>
+<li>C.最近一个会计年度实收资本不少于10亿美元或等值货币</li>
+<li>D.境外托管机构的高级管理人员有5年以上从业经验</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>托管人可以要托符合下列条件的境外资产托管人负责境外资产托管业务:(1)在中国大陆以外的国家或地区设立,受当地地区<br>政府、金融或证券监管机构的监管。(2)最近一个会计年度实收资本不少于10亿美元或等值货币或托管资产规模不少<br>000亿美元或等值货币。(3)有足够的熟悉境外托管业务的专职人员。(4)具留安全保管资产的条件。(5)具餐安全、<br>高效的清算、交割能力。(6)最近3年没有受到监管机构的重大处罚,没有重大事项正在接受司法部门、监管机构的立案<br>调查。</p></span></div>
+
+<blockquote>
+<p>85、(单选题)下列关于银行间债券市场的组织体系的表述,不正确的是()。</p>
+</blockquote>
+<ul>
+<li>A.中国人民银行负责监督管理银行间债券市场</li>
+<li>B.其中介服务机构主要有全国银行间同业拆借中心、中央结算公司和上海清算所</li>
+<li>C.中央结算公司主要为市场的投资者提供报价平台</li>
+<li>D.上海清算所为银行间市场提供以中央对手净额清算为主的直接和间接的本、外币清算服务</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C,你的答案: ,未作答</p><p><code>解析</code><br>全国银行间同业拆借中心主要为市场的投资者提供报价平台,为其交易提供电子成交登记服务,并按照中国人民银行的有<br>关规定,对通过交易系统开展的使券交易活动进行监测。中央结算公司主要为市场的发行人、投资人等名类参与主体提供<br>圆债、金融使券、企业使券和其他固定收益证券的发行、登记、托管、交易结算,信息发布等服务,并负责维护中使统合<br>业务平台的正常运行。</p></span></div>
+
+<blockquote>
+<p>86、(单选题)基金会计核算的内容不包括()。</p>
+</blockquote>
+<ul>
+<li>A.权益核算</li>
+<li>B.估值核算</li>
+<li>C.让芳交易核异</li>
+<li>D.投资绩效评估</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>基金会计核算的内容主要包括以下几类业务:(1)证券和衍生工具交易核算。(2)权益按算,(3)利息和滋价核算。<br>(4)费用核算。(5)基金申购与赎回核算。(6)估值核算。(7)利润核算。(8)基金财务会计报告。(9)基金会计<br>核算的复校。</p></span></div>
+
+<blockquote>
+<p>87、(单选题)目前我国开放式基金的估值频率是()。</p>
+</blockquote>
+<ul>
+<li>A.每个自然日估值,当日披露份额净值</li>
+<li>B.每个交易日估值,每周披露一次份额净值</li>
+<li>C.每个自然日估值,次日披露份额净值</li>
+<li>D.每个交易日估值,次日披露份额净值</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>目前,我国的开放式基金于每个交易日估值,并于次日公告基金份额净值。封闭式基金每周披露一次基金份额净值,但每<br>个交易日也都进行估值。</p></span></div>
+
+<blockquote>
+<p>83、(单选题)以下顶目,不应该在基金费用中列支的是()。</p>
+</blockquote>
+<ul>
+<li>A.销售服务费</li>
+<li>B.基金合同生效后的会计师费和律师费</li>
+<li>C.基金合同生效后的信息披露费用</li>
+<li>D.关于基金合同生效公告的信息披露费用</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>下列与基金有关的费用可以从基金财产中列支:(1)基金管理人的管理费。(<br>2)基金托管人的托管费。<br>费。(4)基金合同生效后的信息披露费用。(5)基金合同生效后的会计师费和律师费。(6)基金份额持有人大会费<br>用。(7)基金的证券交易费用。(8)按照国家有关规定和基金合同约定,可以在基金财产中列支的其他费用。</p></span></div>
+
+<blockquote>
+<p>89、(单选题)对存在活跃市场的投资品种,如估值日有市价的应采用市价确定公允价值,估值日无市价的,但最近交易目后经济<br>且证券发行机构末发生影响证券价格的重大事件的,应采用何种价格确定公允价值?()</p>
+</blockquote>
+<ul>
+<li>A.前一交易日市价</li>
+<li>B.最近交易市价</li>
+<li>C.类似产品市价</li>
+<li>D.最近20个交易日的平均市价</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B<br><code>解析</code><br>在基金资产估值的基本原则中,对存在活跃市场且能够获取相同资产或负债报价的投资品种,在估值日有报价的, 徐会计<br>准则规定的例外情况外,应将该报价不加调整地应用于该资产或负债的公允价值计量。估值日无报价目后未发生<br>影响公允价值计量的重大事件的,应采用最近交易日的报价确定公允价值。</p></span></div>
+
+<blockquote>
+<p>90、(单选题)若某基金的基金管理费率为0.73%,7月10日,该基金的基金资产净值为50000万元,7月11日,该基全实际天。该年实际天<br>数为365天。则该基金7月11日应计提的管理费为()万元。</p>
+</blockquote>
+<ul>
+<li>A.1.2</li>
+<li>B.365</li>
+<li>C.1</li>
+<li>D.438</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C<br><code>解析</code><br>目前,我国的基金管理费、基金托管费及基金销售服务费均是按前一日基金资产净值的一定比例逐日计提,按用支付,应<br>计提的管理费=50000×0.73%/365=1(万元)。</p></span></div>
+
+<blockquote>
+<p>91、(单选题)×年X月X日某基金公告进行利润分配,每10份分配0.2元。权益登记日(同除息日)小李持有该基金10000份, . -0000份<br>前的单位净值为1.222元,除息后该基金单位净值和小李持有份额分别是()。</p>
+</blockquote>
+<ul>
+<li>A.1.220元,10000份</li>
+<li>B.1.022元,10000份</li>
+<li>C.1,202元,10000份</li>
+<li>D.1.222元,9800份</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C<br><code>解析</code><br>在基金投资者选择现金分红的方式时,其所拥有的基金份额并不发生改变,在这样的情况下,基金分红有大量的现金流<br>出,基金的资产规模会发生改变。该基金每10份分配0.2元,即每份分配0.02元,除息后单位基金净值=1.222-<br>0.02=1.202(元),小李所持有的份额依旧为10000份。</p></span></div>
+
+<blockquote>
+<p>92 (单选题)基金运营过程中发生的增值税的缴纳主体是()。</p>
+</blockquote>
+<ul>
+<li>A.券商</li>
+<li>B.基金托管人</li>
+<li>c.沪深交易所</li>
+<li>D.基金管理人</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>根据《关于明确金融、房地产开发、教育辅助服务等增值税政策的通知》,资管产品运营过程中发生的增值税应税行为以<br>资管产品管理人为增值税纳税人。</p></span></div>
+
+<blockquote>
+<p>93.(单选题)某股票基金月末结转损益前余额如下,当期投资收益100000元,当期公允的价值变动损益贷方余额80000元,当期管理<br>费借方余额200元,当期交易费用借方余额200元,利息支出100元,假设以上收入和费用为该基金当期<br>)元。</p>
+</blockquote>
+<ul>
+<li>A.180 500</li>
+<li>B.99 600</li>
+<li>C.179 700</li>
+<li>D.180 100</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:B案<br><code>解析</code><br>本期已实现收益指基金本期利息收入、投资收益、其他收入(不含公允价值变动损益)扣除相关费用后的余额,是将本期<br>利润扣除本期公允价值变动损益后的余额,反映基金本期已经实现的损益。故本题中,已实现收益=100000+100-20<br>200-100=99 600(元)</p></span></div>
+
+<blockquote>
+<p>94、(单选题)基金因投资股票而带来的投资收益不包括()。</p>
+</blockquote>
+<ul>
+<li>A.存款利息收入</li>
+<li>B.股票股利</li>
+<li>C.股票价差收入</li>
+<li>D.现金股利</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A案<br><code>解析</code><br>投资收益是指基金经营活动中因买卖股票、使券、资产支持证券、基金等实现<br>立持证券、基金等实现的差价收益,因股票、基金投资等获得的股<br>利收益,以及衍生工具投资产生的相关损益。具体包括:(1)股票投资收益。(2)使券投资收益。(3)资产支持证券<br>投资收益。(4)基金投资收益。(5)衍生工具收益。(6)股利收益等。</p></span></div>
+
+<blockquote>
+<p>95、(单选题)深圳证券交易所对专项资产管理计划收益权份额协议交易实行()回转交易。</p>
+</blockquote>
+<ul>
+<li>A.当日</li>
+<li>B.次交易日</li>
+<li>C.次日</li>
+<li>D.滚动日</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A<br><code>解析</code><br>证券的回转交易是指投资者买入的证券,经确认成交后,在交收完成前全部或部分实出。深圳证券交易所对专项资产管理<br>计划收益权份额协议交易实行当日回转交易。</p></span></div>
+
+<blockquote>
+<p>96.(单选题)假设某投资者持有5000份基金,当前的基金份额净值为1.4元,对该基金按1:1.4的比例进行拆分扫作后,对应的基作后,对应的基金资产为</p>
+</blockquote>
+<ul>
+<li>A.3 571</li>
+<li>B.5 000</li>
+<li>C.7 000</li>
+<li>D.9 800</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:C案<br><code>解析</code><br>拆分前,投资者对应的基金资产为14×5000=7000(元),拆分不改变投资者的投资总额,基金资产仍,基金资产仍为7000元。</p></span></div>
+
+<blockquote>
+<p>97、(单选题)对于每日按照面值进行报价的货币市场基金,应当()进行收益分配。</p>
+</blockquote>
+<ul>
+<li>A.每日</li>
+<li>B.每周</li>
+<li>C.每月</li>
+<li>D.每季度</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A<br><code>解析</code><br>《微币市场基金监督管理力法》第十条规定,对于每日按照面值进行报价的货币市场基金,可以在基金合同中将收益分配<br>的方式约定为红利再投资,并应当每日进行收益分配。</p></span></div>
+
+<blockquote>
+<p>98(单选题)关于沪港通、深港通以及债券通开通的重要意义,以下说法正确的是()。<br>I.标志着人民币国际化的重要进展<br>Ⅱ.刺激了人民币的资产需求<br>III.丰富了境外人民币资本的投资品种<br>IV.标志着我国不断扩大金融市场开放<br>V.标志着我国资本账户已经完全开放</p>
+</blockquote>
+<ul>
+<li>A.I、II,IV、V</li>
+<li>B.I、III、IV、V</li>
+<li>C.III、IV、V</li>
+<li>D.I、Ⅱ、III、IV</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>IVI顶,当前中国资本账户尚未完全开放,投资渠道的厦芝严重制约了境外资本投资于人民币资产,沪港通和深港通心许境<br>外投资者通过香港经纪商购买在上海和深圳证券交易所上市的股票,这种方式增加了境外人民币资本的投资品种,扩展<br>投资渠道.</p></span></div>
+
+<blockquote>
+<p>99.(单选题)基金因应付赎回、交易清算等临时用途借入现金的比例不得超过基金、集合计划资产净值的比例为()。</p>
+</blockquote>
+<ul>
+<li>A.10%</li>
+<li>B.12%</li>
+<li>C.15%</li>
+<li>D.16%</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:A<br><code>解析</code><br>除应付赎回、交易清算等临时用途以外,QDII基金不得借入现金,目该临时用途借入现金的比例不得过基合计划<br>资产净值的10%。</p></span></div>
+
+<blockquote>
+<p>100(单选题)不属于我国QDII基金产品的特点的是()。</p>
+</blockquote>
+<ul>
+<li>A.QDII基金的投资范围较为广泛</li>
+<li>B.QDII基金的投资组合较为丰富</li>
+<li>C.在投资管理过程中,具有完全的主动决策权</li>
+<li>D.基金产品的门槛较高</li>
+</ul>
+<div class="hide-block"><button class="hide-button button--animated" style="">查看答案
+    </button><span class="hide-content"><p>正确答案:D<br><code>解析</code><br>QDII基金产品的门槛较低,大部分金融投资产品认购门槛为几万元甚至几十万元人民币,而QDJI基金产品起点仅为1000<br>元人民币适合更为广泛的投资者参与。</p></span></div>
+</div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%9F%BA%E7%A1%80/">基础</a></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/77026d2c.html"><img class="prev-cover" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">7月-基金-基础8</div></div></a></div><div class="next-post pull-right"><a href="/posts/9b31191.html"><img class="next-cover" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">7月-基金-基础5</div></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/posts/97d78432.html" title="7月-基金-基础2"><img class="relatedPosts_cover" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-10-22</div><div class="relatedPosts_title">7月-基金-基础2</div></div></a></div><div class="relatedPosts_item"><a href="/posts/e0d0b4a4.html" title="7月-基金-基础3"><img class="relatedPosts_cover" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-10-22</div><div class="relatedPosts_title">7月-基金-基础3</div></div></a></div><div class="relatedPosts_item"><a href="/posts/77026d2c.html" title="7月-基金-基础8"><img class="relatedPosts_cover" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-10-22</div><div class="relatedPosts_title">7月-基金-基础8</div></div></a></div><div class="relatedPosts_item"><a href="/posts/9b31191.html" title="7月-基金-基础5"><img class="relatedPosts_cover" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-10-22</div><div class="relatedPosts_title">7月-基金-基础5</div></div></a></div><div class="relatedPosts_item"><a href="/posts/90ba402b.html" title="7月-基金-基础6"><img class="relatedPosts_cover" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-10-22</div><div class="relatedPosts_title">7月-基金-基础6</div></div></a></div><div class="relatedPosts_item"><a href="/posts/eded588.html" title="7月-基金-基础1"><img class="relatedPosts_cover" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-10-22</div><div class="relatedPosts_title">7月-基金-基础1</div></div></a></div></div></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By 詹增锦</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><button id="readmode" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" title="缩小字体"><i class="fas fa-minus"></i></button><button class="translate_chn_to_cht" id="translateLink" title="简繁转换">簡</button><button id="darkmode" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" title="设置"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script></body></html>
